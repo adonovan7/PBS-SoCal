@@ -1,2 +1,2 @@
 <?php
-// Silence is golden.
+// Hello from the dark (Atom theme) side
