@@ -54,7 +54,9 @@
 				}
 				?>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?>
+					<?php //printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' );
+						echo('Scratch Jr. Community Space'); 
+					?>
 				</a>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
