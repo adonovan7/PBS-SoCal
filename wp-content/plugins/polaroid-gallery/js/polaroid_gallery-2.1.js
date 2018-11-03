@@ -1,7 +1,9 @@
 // replacement for deprecated $.browser
+
+// user agen match
 jQuery.uaMatch = function( ua ) {
     ua = ua.toLowerCase();
-
+// getting browser version
     var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
         /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
         /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
@@ -32,21 +34,25 @@ jQuery.extend({
 		return MinV + jQuery.random(MaxV - MinV + 1);
 	},
 	// random background-image position
+
 	randomBackgroundPosition: function() {
 		var top = ['top', 'center', 'bottom'],
 			left = ['left', 'center', 'right'];
 		return left[jQuery.random(3)] + ' ' + top[jQuery.random(3)];
 	},
+
 	// rotate filter for IE
+
 	ieRotateFilter: function(deg) {
 		deg = (deg < 0) ? 360 + deg : deg;
 		var deg2radians = Math.PI * 2 / 360,
 			nAngle = deg * deg2radians,
 			nCos = Math.cos(nAngle).toFixed(3),
 			nSin = Math.sin(nAngle).toFixed(3);
-		
+
 		return "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=" + nCos + ", M12=" + (-nSin) + ", M21=" + nSin + ", M22=" + nCos + ")";
 	}
+
 });
 
 function init() {
@@ -57,7 +63,9 @@ function init() {
 		thumbsOption = (typeof(polaroid_gallery) !== 'undefined' ) ? polaroid_gallery.thumbnail : 'none',
 		imagesOption = (typeof(polaroid_gallery) !== 'undefined' ) ? polaroid_gallery.image : 'title3',
 		scratches = (typeof(polaroid_gallery) !== 'undefined' ) ? polaroid_gallery.scratches : 'yes';
-	var cssHoverObj = {
+
+// expands by 1.15% when hover over
+  var cssHoverObj = {
 		'z-index' : '1001',
 		'-webkit-transform' : 'scale(1.15)',
 		'-moz-transform' :  'scale(1.15)',
@@ -66,11 +74,11 @@ function init() {
 		'transform' : 'scale(1.15)'
 		};
 	var ua = jQuery.uaMatch(navigator.userAgent);
-	var isThisOldIe = (ua.browser == "msie" && ua.version*1 < 9);
+	var isThisOldIe = (ua.browser == "msie" && ua.version*1 < 9); // old internet explorer
 	var getText;
-	switch (thumbsOption) {			
+	switch (thumbsOption) {
 			case 'image1':
-				getText = function(currentIndex) { return imageStr +'&nbsp; '+ (currentIndex + 1); };
+				getText = function(currentIndex) { return imageStr +'&nbsp; '+ (currentIndex + 1); }; //&nbsp = non breaking space
 				break;
 			case 'image2':
 				getText = function(currentIndex) { return imageStr +'&nbsp; '+ (currentIndex + 1) +' / '+ imagesCount; };
@@ -79,7 +87,7 @@ function init() {
 				getText = function(currentIndex) { return (currentIndex + 1); };
 				break;
 			case 'number2':
-				getText = function(currentIndex) { return (currentIndex + 1) +' / '+ imagesCount; }; 
+				getText = function(currentIndex) { return (currentIndex + 1) +' / '+ imagesCount; };
 				break;
 			case 'none':
 				getText = function(currentIndex) { return '&nbsp;'; };
@@ -95,27 +103,28 @@ function init() {
 		var width = $(this).width(),
 			text = jQuery.trim($("span", this).attr('title')),
 			randNum = $.randomBetween(-12, 12),
-			randDeg = 'rotate(' + randNum + 'deg)',
+			//randDeg = 'rotate(' + randNum + 'deg)',
+      randDeg = 'rotate(' + 0 + 'deg)',
 			randPos = $.randomBackgroundPosition(),
-			ieFilter = $.ieRotateFilter(randNum);
-		
+			ieFilter = $.ieRotateFilter(randNum); //rotation?
+
 		text = getText(currentIndex, text);
 
 		$("span", this).after('<span class="polaroid-gallery-text" style="width:'+width+'px;">'+text+'</span>');
-		
+
 		if (isThisOldIe) {
 			var cssIeObj = {
 				'filter' : ieFilter,
 				'-ms-filter' : '"'+ ieFilter +'"'
 			};
 			$(this).css(cssIeObj);
-		} else {			
+		} else {
 			if(scratches === 'yes') {
 				$("span.polaroid-gallery-text", this)
 					.after('<span class="polaroid-gallery-scratches" style="background-position: '+randPos+';"></span>');
 			}
 		}
-		
+
 		var cssObj = {
 			'z-index' : zIndex,
 			'-webkit-transform' : randDeg,
@@ -130,11 +139,11 @@ function init() {
 			$(this).css(cssHoverObj);
 		}, function () {
 			$(this).css(cssObj);
-		});			
+		});
 	});
 
 	$(".polaroid-gallery").css('visibility', 'visible');
-	
+
 	$(".polaroid-gallery a.polaroid-gallery-item").fancybox({
 		'padding'			: 16,
 		'margin'			: 40,
@@ -178,7 +187,7 @@ function init() {
 			return '<span id="fancybox-title-over">' + text + '</span>';
 		}
 	});
-	
+
 }
 
 // For Safari due to Safari is unable to get width and height of image/element
