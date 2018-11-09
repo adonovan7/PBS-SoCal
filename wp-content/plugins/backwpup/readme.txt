@@ -4,7 +4,7 @@ Tags: backup, database backup, cloud backup, restore, wordpress backup
 Requires at least: 3.9
 Tested up to: 4.9.8
 Requires PHP: 5.3
-Stable tag: 3.6.2
+Stable tag: 3.6.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Schedule complete automatic backups of your WordPress installation. Decide which
 
 == Description ==
 
-**You, our loyal users, downloaded BackWPup incredible 7 million times! We celebrate that with a 30% discount on all our BackWPup PRO licences - only valid until November 11th, 2018! [Save 30% and get PRO!](https://backwpup.com/#buy)**
+**You, our loyal users, downloaded BackWPup incredible 7 million times! We celebrate that with a 30% discount on all our BackWPup PRO licences - only vaild until November 11th, 2018! [Save 30% and get PRO!](https://backwpup.com/#buy)**
 
 The **backup plugin** **[BackWPup](https://backwpup.com/)** can be used to save your complete installation including /wp-content/ and push them to an external Backup Service, like **Dropbox**, **S3**, **FTP** and many more, see list below. With a single backup .zip file you are able to easily restore an installation. Please understand: this free version will not be supported as good as the [BackWPup Pro version](https://backwpup.com). With our premium version you get first class support and more features.
 
@@ -163,12 +163,19 @@ Yes. You need to have writing access to the wp-config.php file (usually residing
 [You can find a detailed tutorial in the BackWPup documentation.](https://backwpup.com/docs/install-backwpup-pro-activate-licence/)
 
 == Changelog ==
+= Version 3.6.3 =
+Release Date: Nov, 5, 2018
+
+* Fixed: "Failed to restore file": file restore progress stop working and jump directly to database restore step
+* Fixed: Restore progress stuck on "restoring database" with archive backup contains files only
+* Fixed: All config.php files are not in backup archive
+
 = Version 3.6.2 =
-Release Date: Oct 17, 2018
+Release Date: Oct, 17, 2018
 
 * Fixed: Not recognized file extensions get an additional underscore in the file name in zip file
 * Fixed: Backup archive file have dot folder contains all web root files
-* Fixed: Ftp destination downloader repetitively open a new handler for the source file causing corrupted backup.
+* Fixed: Ftp destination downloader repetitively open a new handler for the source file causing corrupted backup
 
 = Version 3.6.1 =
 Release Date: Sep 25, 2018

@@ -4,7 +4,7 @@ Theme URI: https://themepalace.com/downloads/firm-graphy
 Author: Theme Palace
 Author URI: https://themepalace.com
 Description: Firm Graphy is a mobile responsive and super customizable WordPress theme. With its aesthetically pleasant and modern looking design is a multipurpose WordPress theme fully capable of handling the needs and requirements of enormously vast range of websites, from personal to corporate but is particularly suited for the needs of people who want to start their blog, firms and business that wish to establish their online presence. The theme is beautifully crafted, clean, easy to use, responsive, features different layouts with sidebar position and allows unlimited color selection. It has been designed for everybody with or without previous coding experience to effectively and helps to speedily put together polished, professional quality websites without having to so much as peek at a single line of code.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: firm-graphy
@@ -1589,7 +1589,6 @@ input[type="submit"],
     height: auto;
     padding: 17px 40px;
     font-weight: 600;
-    margin-top: 50px;
     text-align: center;
     display: inline-block;
      font-family: 'Muli', sans-serif;
@@ -4747,9 +4746,6 @@ body.body-font-5 .trail-items li {
 	.contact-form {
 	    padding: 45px;
 	}
-	#secondary .textwidget img {
-	    margin: auto;
-	}
 	#secondary .widget.widget_about p {
 	    padding: 0 20px;
 	}
@@ -4815,6 +4811,7 @@ body.body-font-5 .trail-items li {
 	    margin-bottom: 0;
 	    position: relative;
 	    min-height: 80px;
+	    border-bottom: 1px solid #eee;
 	}
 	aside#secondary {
 	    margin-top: 50px;

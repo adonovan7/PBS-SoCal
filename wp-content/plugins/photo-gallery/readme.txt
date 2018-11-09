@@ -3,7 +3,7 @@ Contributors: webdorado,wdsupport,photogallerysupport,10web
 Tags: gallery, photo gallery, image gallery, responsive gallery, wordpress gallery plugin, photo albums, gallery slider, gallery lightbox, wordpress photo gallery plugin, fullscreen gallery, watermarking, video gallery
 Requires at least: 3.4
 Tested up to: 4.9 
-Stable tag: 1.5.7
+Stable tag: 1.5.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=VDKtGHAJVpc
 [Special Offer for all Premium Plugins](https://10web.io/pricing/) 
 [WordPress Photo Gallery](https://10web.io/plugins/wordpress-photo-gallery/)  
 [Demo](https://demo.10web.io/photo-gallery/)  
-[User Manual](https://docs.10web.io/docs/photo-gallery/introduction.html)  
+[User Manual](https://help.10web.io/hc/en-us/sections/360002159111-Photo-Gallery)  
 [Support Forum](https://wordpress.org/support/plugin/photo-gallery)  
  
 
@@ -278,6 +278,9 @@ Choose whether to display random or the first/last specific number of images.
 
 
 == Changelog ==
+
+= 1.5.8 =
+* Added: Notification to install 10WEB Manager plugin.    
 
 = 1.5.7 =
 * Fixed: Link in gallery/gallery group description.    

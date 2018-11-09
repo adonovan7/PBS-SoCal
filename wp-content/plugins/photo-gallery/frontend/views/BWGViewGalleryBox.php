@@ -1054,9 +1054,9 @@ class BWGViewGalleryBox {
         }
 		    $has_embed = $has_embed || preg_match('/EMBED/',$image_row->filetype) == 1;
         if ( BWG()->is_pro ) {
-          $current_pricelist_id = $this->model->get_image_pricelist($image_row->id) ? $this->model->get_image_pricelist($image_row->id) : 0;
-          $_pricelist_data = $this->model->get_image_pricelists($current_pricelist_id);
-          $_pricelist = $_pricelist_data["pricelist"];
+          $current_pricelist_id = $this->model->get_image_pricelist($image_row->id);
+          $current_pricelist_id = $current_pricelist_id ? $current_pricelist_id : 0;
+          $_pricelist = $pricelist_data["pricelist"];
         }
         ?>
         data["<?php echo $key; ?>"] = [];

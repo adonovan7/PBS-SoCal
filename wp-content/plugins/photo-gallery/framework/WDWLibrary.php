@@ -2491,53 +2491,53 @@ class WDWLibrary {
   public static function topbar() {
     $page = isset($_GET['page']) ? esc_html($_GET['page']) : '';
     $taxonomy = isset($_GET['taxonomy']) ? esc_html($_GET['taxonomy']) : '';
-    $user_guide_link = 'https://docs.10web.io/docs/photo-gallery/';
+    $user_guide_link = 'https://help.10web.io/hc/en-us/articles/';
     $show_content = true;
     $show_guide_link = true;
     $show_head = false;
     if ('bwg_tag' == $taxonomy) {
-      $user_guide_link .= 'image-tags';
+      $user_guide_link .= '360016080271-Creating-and-Applying-Image-Tags';
     }
     else {
       switch ( $page ) {
         case 'galleries_bwg':
           {
-            $user_guide_link .= 'adding-galleries/creating-galleries.html';
+            $user_guide_link .= '360016079391-Creating-Galleries';
             break;
           }
         case 'albums_bwg':
           {
-            $user_guide_link .= 'gallery-groups';
+            $user_guide_link .= '360015860512-Creating-Gallery-Groups';
             break;
           }
         case 'tags_bwg':
           {
-            $user_guide_link .= 'image-tags';
+            $user_guide_link .= '360016080271-Creating-and-Applying-Image-Tags';
             break;
           }
         case 'options_bwg':
           {
-            $user_guide_link .= 'photo-gallery-options';
+            $user_guide_link .= '360015860912-Configuring-Photo-Gallery-Options';
             break;
           }
         case 'themes_bwg':
           {
-            $user_guide_link .= 'photo-gallery-themes';
+            $user_guide_link .= '360016082231-Editing-Photo-Gallery-Themes';
             break;
           }
         case 'comments_bwg':
           {
-            $user_guide_link .= 'comments-ratings';
+            $user_guide_link .= '360016082451-Managing-Image-Comments-and-Ratings';
             break;
           }
         case 'ratings_bwg':
           {
-            $user_guide_link .= 'comments-ratings';
+            $user_guide_link .= '360016082451-Managing-Image-Comments-and-Ratings';
             break;
           }
         case 'licensing_bwg':
           {
-            $user_guide_link .= 'adding-galleries/creating-galleries.html';
+            $user_guide_link .= '360016079391-Creating-Galleries';
             break;
           }
         default:

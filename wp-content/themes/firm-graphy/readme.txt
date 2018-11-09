@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, threaded
 
 Requires at least: 4.7
 Tested up to: 4.9.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -89,6 +89,9 @@ Unless otherwise specified, all the theme images are created by us and licensed 
 	One Click Demo Import is recommended to extract demo data for initial setup.
 
 == Changelog ==
+
+= 1.0.2 - Nov 5 2018 =
+* Updated gapping issues and responsive
 
 = 1.0.1 - Oct 12 2018 =
 * Updated Screenshot
