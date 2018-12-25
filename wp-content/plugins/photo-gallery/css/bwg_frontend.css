@@ -50,9 +50,10 @@ div[id^="bwg_container"] .SumoSelect.open > .CaptionCont {
 
 #spider_popup_wrap a {
   border: none;
+  box-shadow: none;
 }
 
-div[id^="bwg_container"] .bwg-container a {
+div[id^="bwg_container"].bwg_container a {
   border: none;
   box-shadow: none !important;
   outline: none;

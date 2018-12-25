@@ -2143,3 +2143,7 @@ li.tabs {
     width: 360px;
   }
 }
+
+#wd_tenweb_notice_cont {
+  display: inline-block!important;
+}
