@@ -19,7 +19,7 @@ function jt_cmb2_rbstextarea_field( $metakey, $post_id = 0 ) {
 
 function jt_cmb2_render_rbstextarea_field_callback( $field, $value, $object_id, $object_type, $field_type_object ) {
 
-	$value =  $value ? $value : $field->args('default') ;
+	$value =  $value ? trim($value) : $field->args('default') ;
 	$hide_label =  $field->args('hide_label')  ? 1 : 0 ;
 ?>
 <div class="form-horizontal">
@@ -36,8 +36,7 @@ function jt_cmb2_render_rbstextarea_field_callback( $field, $value, $object_id, 
 	    				.'id="'.$field_type_object->_id().'" '
 	    				.'name="'.$field_type_object->_name().'" '
 	    				.'class="form-control '.$field_type_object->args('class').'" '
-	    				.'rows="6"> '
-	    				.$value
+	    				.'rows="6">'.$value
 	    		.'</textarea>';
 			?> 
 	    </div>

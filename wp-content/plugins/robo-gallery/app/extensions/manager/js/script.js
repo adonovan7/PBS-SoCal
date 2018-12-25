@@ -1,6 +1,6 @@
 /* 
 *      Robo Gallery     
-*      Version: 2.8.11 - 86456
+*      Version: 2.8.14 - 71958
 *      By Robosoft
 *
 *      Contact: https://robosoft.co/robogallery/ 

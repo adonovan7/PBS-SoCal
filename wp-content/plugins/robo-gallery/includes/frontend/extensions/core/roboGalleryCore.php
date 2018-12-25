@@ -17,6 +17,7 @@ if ( ! defined( 'WPINC' ) )  die;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 require_once ROBO_GALLERY_FRONTEND_PATH.'roboGalleryAbstractExtension.php';
+require_once ROBO_GALLERY_FRONTEND_EXT_PATH.'loader/RoboGalleryLoader.php';
 
 class roboGalleryCore{
 
@@ -35,9 +36,7 @@ class roboGalleryCore{
 	}
 
 	protected function init(){
-		
 		$this->addExtension( new RoboGalleryLoader($this) );
-
 	}
 
 
@@ -58,6 +57,8 @@ class roboGalleryCore{
 
 
 	public function addCSS( $cssCode, $position = 'after'){
+		
+		$cssCode = $this->minData($cssCode);
 
 		switch ($position) {
 			case 'before':
@@ -70,6 +71,19 @@ class roboGalleryCore{
 				break;
 		}
 		
+	}
+
+	private function minData( $value ){
+		$value = str_replace( array("\n", "\r", "\t"), '', $value);
+
+		$value = str_replace("  ", ' ', $value);
+		$value = str_replace(" {", '{', $value);
+		$value = str_replace("{ ", '{', $value);
+		$value = str_replace(": ", ':', $value);
+		$value = str_replace(", ", ',', $value);
+
+		$value = str_replace("  ", ' ', $value);
+		return $value;
 	}
 
 	public function getHTML(){

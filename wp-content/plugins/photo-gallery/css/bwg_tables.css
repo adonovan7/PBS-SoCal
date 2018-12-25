@@ -2144,6 +2144,6 @@ li.tabs {
   }
 }
 
-#wd_tenweb_logo_notice {
-  display: block!important;
+#wd_tenweb_notice_cont {
+  display: inline-block!important;
 }

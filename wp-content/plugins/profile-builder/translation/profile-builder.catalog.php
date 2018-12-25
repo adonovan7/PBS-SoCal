@@ -1,397 +1,5 @@
 <?php __("", "profile-builder"); ?>
-<?php __("bbPress", "profile-builder"); ?>
-<?php __("bbPress Integration", "profile-builder"); ?>
-<?php __("Choose (Single) User Listing to display under bbPress user Profile tab:", "profile-builder"); ?>
-<?php __("None", "profile-builder"); ?>
-<?php __("Select which Single User-listing managed via Profile Builder should replace the default bbPress user profile.", "profile-builder"); ?>
-<?php __("Choose Edit Profile form to display under bbPress Profile Edit tab:", "profile-builder"); ?>
-<?php __("Default Edit Profile", "profile-builder"); ?>
-<?php __("Select Profile Builder Edit Profile form to replace the bbPress Profile Edit tab.", "profile-builder"); ?>
-<?php __("Topics Started", "profile-builder"); ?>
-<?php __("Replies Created", "profile-builder"); ?>
-<?php __("Forum Role", "profile-builder"); ?>
-<?php __("bbPress needs to be installed and activated for Profile Builder - bbPress Integration Add-on to work as expected!", "profile-builder"); ?>
-<?php __("BuddyPress", "profile-builder"); ?>
-<?php __("BuddyPress Integration", "profile-builder"); ?>
-<?php __("Import BuddyPress Fields to Profile Builder", "profile-builder"); ?>
-<?php __("Import BuddyPress Fields", "profile-builder"); ?>
-<?php __("Create fields in Profile Builder that match the existing ones in BuddyPress and import all the user field entries.<br><a href=\"https://www.cozmoslabs.com/docs/profile-builder-2/add-ons/buddypress/#Import_BuddyPress_Fields_to_Profile_Builder\">Learn more about importing BuddyPress fields</a>.", "profile-builder"); ?>
-<?php __("Registration form:", "profile-builder"); ?>
-<?php __("Default Registration", "profile-builder"); ?>
-<?php __("Select Profile Builder Registration form to replace the BuddyPress Registration form.<br>Registration emails will now be managed in Profile Builder -> User Email Customizer", "profile-builder"); ?>
-<?php __("Edit Profile form:", "profile-builder"); ?>
-<?php __("Select Profile Builder Edit Profile form to replace the BuddyPress Profile Edit tab.", "profile-builder"); ?>
-<?php __("User Listing template:", "profile-builder"); ?>
-<?php __("Select which User Listing template managed by Profile Builder should replace the default BuddyPress user profile view.", "profile-builder"); ?>
-<?php __("Use All-User Listing?", "profile-builder"); ?>
-<?php __("Enable PB User Listing on BuddyPress Members page", "profile-builder"); ?>
-<?php __("Check this if All User-listing managed via Profile Builder should replace the default BuddyPress Members page.<br>The template used will be the one selected above.", "profile-builder"); ?>
-<?php __("Allow members to override", "profile-builder"); ?>
-<?php __("Enforce field visibility", "profile-builder"); ?>
-<?php __("BuddyPress Default Field Visibility", "profile-builder"); ?>
-<?php __("BuddyPress Allow Custom Visibility", "profile-builder"); ?>
-<?php __("This field can be seen by: ", "profile-builder"); ?>
-<?php __("Change", "profile-builder"); ?>
-<?php __("Who can see this field?", "profile-builder"); ?>
-<?php __("Close", "profile-builder"); ?>
-<?php __("Everyone", "profile-builder"); ?>
-<?php __("Only Me", "profile-builder"); ?>
-<?php __("All Members", "profile-builder"); ?>
-<?php __("My Friends", "profile-builder"); ?>
-<?php __("<h2>Import BuddyPress Fields to Profile Builder</h2>", "profile-builder"); ?>
-<?php __("BuddyPress is not installed and active. Import aborted!", "profile-builder"); ?>
-<?php __("Importing BuddyPress Field Settings to Profile Builder...<br><br>", "profile-builder"); ?>
-<?php __("If the page does not redirect automatically", "profile-builder"); ?>
-<?php __("click here", "profile-builder"); ?>
-<?php __("Importing User entries BuddyPress Fields to Profile Builder...<br><br>", "profile-builder"); ?>
-<?php __("Done.", "profile-builder"); ?>
-<?php __("Back to BuddyPress Settings page", "profile-builder"); ?>
-<?php __("Profile Builder Avatar field is disabled to allow use of BuddyPress Avatar.", "profile-builder"); ?>
-<?php __("BuddyPress needs to be installed and activated for Profile Builder - BuddyPress Integration Add-on to work as expected!", "profile-builder"); ?>
-<?php __("Name", "profile-builder"); ?>
-<?php __("Username:", "profile-builder"); ?>
-<?php __("First Name:", "profile-builder"); ?>
-<?php __("Last Name:", "profile-builder"); ?>
-<?php __("Nickname:", "profile-builder"); ?>
-<?php __("Display name:", "profile-builder"); ?>
-<?php __("Contact Info", "profile-builder"); ?>
-<?php __("Website:", "profile-builder"); ?>
-<?php __("About Yourself", "profile-builder"); ?>
-<?php __("Biographical Info:", "profile-builder"); ?>
-<?php __("BuddyPress Avatar", "profile-builder"); ?>
-<?php __("BuddyPress Cover Photo", "profile-builder"); ?>
-<?php __("BuddyPress Last Active", "profile-builder"); ?>
-<?php __("BuddyPress Add Friend Button", "profile-builder"); ?>
-<?php __("BuddyPress Latest Update", "profile-builder"); ?>
-<?php __("Never active", "profile-builder"); ?>
-<?php __("Last Active", "profile-builder"); ?>
-<?php __("My BuddyPress Friends Tab", "profile-builder"); ?>
-<?php __("BuddyPress field visibility syntax", "profile-builder"); ?>
-<?php __("Are you sure you want to reset this template?", "profile-builder"); ?>
-<?php __("Reset to Default BuddyPress User Listing Templates", "profile-builder"); ?>
-<?php __("<b>Note:</b> This action is not reversible. All modifications to this template will be lost!", "profile-builder"); ?>
-<?php __("Reset template", "profile-builder"); ?>
-<?php __("CSS Class", "profile-builder"); ?>
-<?php __("Add a class to a field. Should not contain dots(.) and for multiple classes separate by space.", "profile-builder"); ?>
-<?php __("Login Label", "profile-builder"); ?>
-<?php __("Login", "profile-builder"); ?>
-<?php __("Logout Label", "profile-builder"); ?>
-<?php __("Logout", "profile-builder"); ?>
-<?php __("Form page URL", "profile-builder"); ?>
-<?php __("Login page URL", "profile-builder"); ?>
-<?php __("Login Form page URL", "profile-builder"); ?>
-<?php __("Edit Profile Form page URL", "profile-builder"); ?>
-<?php __("Register Form page URL", "profile-builder"); ?>
-<?php __("Display Mode", "profile-builder"); ?>
-<?php __("Logged In Users", "profile-builder"); ?>
-<?php __("Logged Out Users", "profile-builder"); ?>
-<?php __("Restrict menu item to a minimum role", "profile-builder"); ?>
-<?php __("Works only if Display Mode: Logged In Users is selected", "profile-builder"); ?>
-<?php __("Edit Profile", "profile-builder"); ?>
-<?php __("Register", "profile-builder"); ?>
-<?php __("iFrame Title", "profile-builder"); ?>
-<?php __("iFrame Size", "profile-builder"); ?>
-<?php __("Height (px)", "profile-builder"); ?>
-<?php __("Width (px)", "profile-builder"); ?>
-<?php __("Forms", "profile-builder"); ?>
-<?php __("Fields", "profile-builder"); ?>
-<?php __("Emails", "profile-builder"); ?>
-<?php __("Userlisting", "profile-builder"); ?>
-<?php __("Shortcodes", "profile-builder"); ?>
-<?php __("Customization Toolbox", "profile-builder"); ?>
-<?php __("Toolbox", "profile-builder"); ?>
-<?php __("Settings", "profile-builder"); ?>
-<?php __("The email confirmation does not match your email address.", "profile-builder"); ?>
-<?php __("Visibility", "profile-builder"); ?>
-<?php __("<strong>Admin Only</strong> field is visible only for administrators. <strong>User Locked</strong> field is visible for both administrators and users, but only administrators have the capability to edit it.", "profile-builder"); ?>
-<?php __("User Role Visibility", "profile-builder"); ?>
-<?php __("Select which user roles see this field", "profile-builder"); ?>
-<?php __("Location Visibility", "profile-builder"); ?>
-<?php __("Select the locations you wish the field to appear", "profile-builder"); ?>
-<?php __("<pre>Title</pre><pre>Type</pre><pre>Meta Name</pre><pre class=\"wppb-mb-head-required\">Required</pre><pre class=\"wppb-mb-head-visibility\"></pre>", "profile-builder"); ?>
-<?php __("Edit", "profile-builder"); ?>
-<?php __("Delete", "profile-builder"); ?>
-<?php __("This field is visible only for administrators.", "profile-builder"); ?>
-<?php __("This field is visible for both administrators and users, but only administrators have the capability to edit it.", "profile-builder"); ?>
-<?php __("This field is visible only for the following user roles: %1$s", "profile-builder"); ?>
-<?php __("This field is visible only in the following locations: %1$s", "profile-builder"); ?>
-<?php __("Get file", "profile-builder"); ?>
-<?php __("You do not have the capabilities necessary to edit this field.", "profile-builder"); ?>
-<?php __("Export Profile Builder options as a .json file. This allows you to easily import the configuration into another site.", "profile-builder"); ?>
-<?php __("Export", "profile-builder"); ?>
-<?php __("Import Profile Builder options from a .json file. This allows you to easily import the configuration from another site. ", "profile-builder"); ?>
-<?php __("Import", "profile-builder"); ?>
-<?php __("This will overwrite your old PB settings! Are you sure you want to continue?", "profile-builder"); ?>
-<?php __("Import and Export", "profile-builder"); ?>
-<?php __(" labels scanned.", "profile-builder"); ?>
-<?php __("Labels Edit", "profile-builder"); ?>
-<?php __("Label to Edit", "profile-builder"); ?>
-<?php __("New Label", "profile-builder"); ?>
-<?php __("Edit Labels", "profile-builder"); ?>
-<?php __("Rescan Lables", "profile-builder"); ?>
-<?php __("Informations", "profile-builder"); ?>
-<?php __("Import and Export Labels", "profile-builder"); ?>
-<?php __("Import Labels from a .json file.", "profile-builder"); ?>
-<?php __("Easily import the labels from another site.", "profile-builder"); ?>
-<?php __("This will overwrite all your old edited labels!\nAre you sure you want to continue?", "profile-builder"); ?>
-<?php __("Export Labels as a .json file.", "profile-builder"); ?>
-<?php __("Easily import the labels into another site.", "profile-builder"); ?>
-<?php __("You must select a label to edit!", "profile-builder"); ?>
-<?php __("Labels", "profile-builder"); ?>
-<?php __("Delete all", "profile-builder"); ?>
-<?php __("No labels edited, nothing to export!", "profile-builder"); ?>
-<?php __("MailPoet Newsletters needs to be installed and activated for Profile Builder - MailPoet Add-on to work!", "profile-builder"); ?>
-<?php __("Maximum Character Length", "profile-builder"); ?>
-<?php __("Specify the maximum number of characters a user can type in this field", "profile-builder"); ?>
-<?php __("The entered character number is not numerical\n", "profile-builder"); ?>
-<?php __("Step", "profile-builder"); ?>
-<?php __("Title for Tab", "profile-builder"); ?>
-<?php __("Add Break Points to edit tabs title.", "profile-builder"); ?>
-<?php __("Publish the form to edit tabs title.", "profile-builder"); ?>
-<?php __("Publish the form before adding Break Points!", "profile-builder"); ?>
-<?php __("Request in process, please wait a few seconds before a new one!", "profile-builder"); ?>
-<?php __("Multi-Step Forms", "profile-builder"); ?>
-<?php __("Multi-Step Forms options updated.", "profile-builder"); ?>
-<?php __("Enable on:", "profile-builder"); ?>
-<?php __("PB Default Register Form", "profile-builder"); ?>
-<?php __("PB Default Edit Profile Form", "profile-builder"); ?>
-<?php __("To enable it on Multiple Registration and Edit-Profile Forms you must add Break Points in each form page.", "profile-builder"); ?>
-<?php __("Pagination and Tabs:", "profile-builder"); ?>
-<?php __("Enable Pagination", "profile-builder"); ?>
-<?php __("Enable Tabs", "profile-builder"); ?>
-<?php __("Edit Tabs Title", "profile-builder"); ?>
-<?php __("Update Multi-Step", "profile-builder"); ?>
-<?php __("To enable MSF you must add Break Points.", "profile-builder"); ?>
-<?php __("Next", "profile-builder"); ?>
-<?php __("Previous", "profile-builder"); ?>
-<?php __("Placeholder Labels", "profile-builder"); ?>
-<?php __("Replace labels with placeholders:", "profile-builder"); ?>
-<?php __("Yes", "profile-builder"); ?>
-<?php __("No", "profile-builder"); ?>
-<?php __("Social Connect", "profile-builder"); ?>
-<?php __("Display on the Following Forms", "profile-builder"); ?>
-<?php __("Disable Registration on", "profile-builder"); ?>
-<?php __("Allow only login with Social Connect on Profile Builder Login Form.<br>Social Connect will still automatically register users on other forms.", "profile-builder"); ?>
-<?php __("Facebook Login", "profile-builder"); ?>
-<?php __("Facebook App ID", "profile-builder"); ?>
-<?php __("Google+ Login", "profile-builder"); ?>
-<?php __("Google+ Client ID", "profile-builder"); ?>
-<?php __("Twitter Login", "profile-builder"); ?>
-<?php __("Twitter API Key", "profile-builder"); ?>
-<?php __("Twitter API Secret", "profile-builder"); ?>
-<?php __("LinkedIn Login", "profile-builder"); ?>
-<?php __("LinkedIn Client ID", "profile-builder"); ?>
-<?php __("Buttons Order", "profile-builder"); ?>
-<?php __("Drag and drop the dots to re-order.", "profile-builder"); ?>
-<?php __("Buttons Re-Order", "profile-builder"); ?>
-<?php __("Save the buttons order from the buttons order checkboxes", "profile-builder"); ?>
-<?php __("Buttons Location", "profile-builder"); ?>
-<?php __("Display social buttons before or after the forms fields.", "profile-builder"); ?>
-<?php __("Buttons Style", "profile-builder"); ?>
-<?php __("Heading Before Buttons (Login/Register)", "profile-builder"); ?>
-<?php __("Empty field will remove the heading.", "profile-builder"); ?>
-<?php __("Heading Before Buttons (Edit Profile)", "profile-builder"); ?>
-<?php __("Facebook Button Text (Login/Register)", "profile-builder"); ?>
-<?php __("Google+ Button Text (Login/Register)", "profile-builder"); ?>
-<?php __("Twitter Button Text (Login/Register)", "profile-builder"); ?>
-<?php __("LinkedIn Button Text (Login/Register)", "profile-builder"); ?>
-<?php __("Facebook Button Text (Edit Profile)", "profile-builder"); ?>
-<?php __("Google+ Button Text (Edit Profile)", "profile-builder"); ?>
-<?php __("Twitter Button Text (Edit Profile)", "profile-builder"); ?>
-<?php __("LinkedIn Button Text (Edit Profile)", "profile-builder"); ?>
-<?php __("Unlink Accounts (Edit Profile)", "profile-builder"); ?>
-<?php __("This option will display linked social platforms to users accounts and will allow to easily unlink them in Edit Profile page.", "profile-builder"); ?>
-<?php __("Default Social Connect CSS in the Front-end", "profile-builder"); ?>
-<?php __("Help", "profile-builder"); ?>
-<?php __("Display Social Connect buttons:", "profile-builder"); ?>
-<?php __("You have successfully unlinked %% from your account.", "profile-builder"); ?>
-<?php __("An account with this email address already exists.<br> Do you want to connect it?", "profile-builder"); ?>
-<?php __("Please enter your website account password", "profile-builder"); ?>
-<?php __("Please enter a new email", "profile-builder"); ?>
-<?php __("You have successfully linked your account to %%.", "profile-builder"); ?>
-<?php __("Something went wrong. Please try again later!", "profile-builder"); ?>
-<?php __("Before you can access your account you need to confirm your email address. Please check your inbox and click the activation link.", "profile-builder"); ?>
-<?php __("<strong>ERROR</strong>: You need to confirm your email address before you can log in.", "profile-builder"); ?>
-<?php __("Before you can access your account an administrator has to approve it. You will be notified via email.", "profile-builder"); ?>
-<?php __("<strong>ERROR</strong>: Your account has to be confirmed by an administrator before you can log in.", "profile-builder"); ?>
-<?php __("You will be redirected in 5 seconds. If not, click %%.", "profile-builder"); ?>
-<?php __("here", "profile-builder"); ?>
-<?php __("<strong>You can only login with social accounts, not register!</strong><br>Please link your social account to an existing user account first.", "profile-builder"); ?>
-<?php __("Wrong password!", "profile-builder"); ?>
-<?php __("Please enter a valid email!", "profile-builder"); ?>
-<?php __("You can only login on this form.<br>Register with your social account on the register form.", "profile-builder"); ?>
-<?php __("Please enter your Facebook email!", "profile-builder"); ?>
-<?php __("Waiting for Twitter...", "profile-builder"); ?>
-<?php __("Please enter your Twitter email!", "profile-builder"); ?>
-<?php __("Profile Builder not active!", "profile-builder"); ?>
-<?php __("General Settings", "profile-builder"); ?>
-<?php __("Application Settings", "profile-builder"); ?>
-<?php __("Appearance Settings", "profile-builder"); ?>
-<?php __("Unlink", "profile-builder"); ?>
-<?php __("Your account is linked with:", "profile-builder"); ?>
-<?php __("Country", "profile-builder"); ?>
-<?php __("First Name", "profile-builder"); ?>
-<?php __("Last Name", "profile-builder"); ?>
-<?php __("Company Name", "profile-builder"); ?>
-<?php __("Address", "profile-builder"); ?>
-<?php __("Town / City", "profile-builder"); ?>
-<?php __("State / County", "profile-builder"); ?>
-<?php __("Postcode / Zip", "profile-builder"); ?>
-<?php __("Email Address", "profile-builder"); ?>
-<?php __("Phone", "profile-builder"); ?>
-<?php __("Ship to a different address?", "profile-builder"); ?>
-<?php __("Billing Address", "profile-builder"); ?>
-<?php __("Displays customer billing fields in front-end. ", "profile-builder"); ?>
-<?php __("Shipping Address", "profile-builder"); ?>
-<?php __("Displays customer shipping fields in front-end. ", "profile-builder"); ?>
-<?php __("Address line 2", "profile-builder"); ?>
-<?php __("Billing Fields", "profile-builder"); ?>
-<?php __("Select which WooCommerce Billing fields to display to the user ( drag and drop to re-order ) and which should be required", "profile-builder"); ?>
-<?php __("Billing Fields Order", "profile-builder"); ?>
-<?php __("Save the billing fields order from the billing fields checkboxes", "profile-builder"); ?>
-<?php __("Billing Fields Name", "profile-builder"); ?>
-<?php __("Save the billing fields names", "profile-builder"); ?>
-<?php __("Shipping Fields", "profile-builder"); ?>
-<?php __("Select which WooCommerce Shipping fields to display to the user ( drag and drop to re-order ) and which should be required", "profile-builder"); ?>
-<?php __("Shipping Fields Order", "profile-builder"); ?>
-<?php __("Save the shipping fields order from the billing fields checkboxes", "profile-builder"); ?>
-<?php __("Shipping Fields Name", "profile-builder"); ?>
-<?php __("Save the shipping fields names", "profile-builder"); ?>
-<?php __("Field Name", "profile-builder"); ?>
-<?php __("Required", "profile-builder"); ?>
-<?php __("Click to edit ", "profile-builder"); ?>
-<?php __("The email you entered is not a valid email address.", "profile-builder"); ?>
-<?php __("No options available. Please select one country.", "profile-builder"); ?>
-<?php __("Billing ", "profile-builder"); ?>
-<?php __("Shipping ", "profile-builder"); ?>
-<?php __("WooCommerce needs to be installed and activated for Profile Builder - WooCommerce Sync Add-on to work!", "profile-builder"); ?>
-<?php __("Display on WooCommerce Checkout", "profile-builder"); ?>
-<?php __("Whether the field should be added to the WooCommerce checkout form or not", "profile-builder"); ?>
-<?php __("WooCommerce Sync", "profile-builder"); ?>
-<?php __("Choose Register form to display on My Account page:", "profile-builder"); ?>
-<?php __("Default Register", "profile-builder"); ?>
-<?php __("Select which Profile Builder Register form to display on My Account page from WooCommerce. <br/> This will also add the Profile Builder Login form to MyAccount page.", "profile-builder"); ?>
-<?php __("Choose Edit Profile form to display on My Account page:", "profile-builder"); ?>
-<?php __("Select which Profile Builder Edit-profile form to display on My Account page from WooCommerce.", "profile-builder"); ?>
 <?php __("%s is also activated. You need to deactivate it before activating this version of the plugin.", "profile-builder"); ?>
-<?php __("Campaign Monitor", "profile-builder"); ?>
-<?php __("Campaign Monitor Integration", "profile-builder"); ?>
-<?php __("Save", "profile-builder"); ?>
-<?php __("Campaign Monitor API key:", "profile-builder"); ?>
-<?php __("The API key was successfully validated!", "profile-builder"); ?>
-<?php __("Either the API key is not valid or we could not connect to Campaign Monitor to validate it!", "profile-builder"); ?>
-<?php __("Enter your Campaign Monitor account API key.", "profile-builder"); ?>
-<?php __("Select client:", "profile-builder"); ?>
-<?php __("Loading clients...", "profile-builder"); ?>
-<?php __("Select a client that you would like to edit.", "profile-builder"); ?>
-<?php __("No clients found", "profile-builder"); ?>
-<?php __("Select a client...", "profile-builder"); ?>
-<?php __("Client List", "profile-builder"); ?>
-<?php __("Fields Count", "profile-builder"); ?>
-<?php __("Retrieves changes made in your Campaign Monitor account and matches it with the saved data from the add-on. This does not save the new data, so you will have to manually save.", "profile-builder"); ?>
-<?php __("Synchronize client data", "profile-builder"); ?>
-<?php __("Change client", "profile-builder"); ?>
-<?php __("No lists were found.", "profile-builder"); ?>
-<?php __("Click to edit", "profile-builder"); ?>
-<?php __("Cancel", "profile-builder"); ?>
-<?php __("Field Associations:", "profile-builder"); ?>
-<?php __("Associate each Campaign Monitor field with a Profile Builder field", "profile-builder"); ?>
-<?php __("Extra Options:", "profile-builder"); ?>
-<?php __("Resubscribe", "profile-builder"); ?>
-<?php __("If the subscriber is in an inactive state or has previously been unsubscribed and you check the Resubscribe option, they will be re-added to the list. Therefore, this method should be used with caution and only where suitable.", "profile-builder"); ?>
-<?php __("Campaign Monitor API key is empty", "profile-builder"); ?>
-<?php __("Campaign Monitor API key is invalid", "profile-builder"); ?>
-<?php __("Campaign Monitor List", "profile-builder"); ?>
-<?php __("Please enter a Campaign Monitor API key <a href=\"%s\">here</a>.", "profile-builder"); ?>
-<?php __("Something went wrong. Either the API key is invalid or we could not connect to Campaign Monitor to validate the key.", "profile-builder"); ?>
-<?php __("Select a list...", "profile-builder"); ?>
-<?php __("Select in which Campaign Monitor list you wish to add a new subscriber", "profile-builder"); ?>
-<?php __("Hide on Edit Profile", "profile-builder"); ?>
-<?php __("If checked this field will not be displayed on edit profile forms", "profile-builder"); ?>
-<?php __("We couldn't find any lists in your Campaign Monitor settings.", "profile-builder"); ?>
-<?php __("Please select at least one Campaign Monitor list \n", "profile-builder"); ?>
-<?php __("Profile Builder Campaign Monitor Widget", "profile-builder"); ?>
-<?php __("Adds a basic subscribe form so that your users can subscribe to your Campaign Monitor lists", "profile-builder"); ?>
-<?php __("Something went wrong. Either the Campaign Monitor API key is missing or it is invalid.", "profile-builder"); ?>
-<?php __("%s", "profile-builder"); ?>
-<?php __("Submit", "profile-builder"); ?>
-<?php __("Subscribe to Newsletter", "profile-builder"); ?>
-<?php __("Title", "profile-builder"); ?>
-<?php __("Select the list your new subscriber will be added to", "profile-builder"); ?>
-<?php __("Select list...", "profile-builder"); ?>
-<?php __("No lists found", "profile-builder"); ?>
-<?php __("Select which fields to show", "profile-builder"); ?>
-<?php __("E-mail address", "profile-builder"); ?>
-<?php __("fullname", "profile-builder"); ?>
-<?php __("Extra options", "profile-builder"); ?>
-<?php __("The Campaign Monitor API key is either missing or is invalid.", "profile-builder"); ?>
-<?php __("Communication Preferences", "profile-builder"); ?>
-<?php __("E-mail", "profile-builder"); ?>
-<?php __("Telephone", "profile-builder"); ?>
-<?php __("SMS", "profile-builder"); ?>
-<?php __("Post", "profile-builder"); ?>
-<?php __("Select which communication preferences are available on your site ( drag and drop to re-order )", "profile-builder"); ?>
-<?php __("Communication Preferences Order", "profile-builder"); ?>
-<?php __("Save the communication preferences order", "profile-builder"); ?>
-<?php __("required", "profile-builder"); ?>
-<?php __("Date", "profile-builder"); ?>
-<?php __("Preference", "profile-builder"); ?>
-<?php __("Uploaded file is not valid json!", "profile-builder"); ?>
-<?php __("Import successfully!", "profile-builder"); ?>
-<?php __("Please select a .json file to import!", "profile-builder"); ?>
-<?php __("Page will refresh in 3 seconds...", "profile-builder"); ?>
-<?php __("MailChimp", "profile-builder"); ?>
-<?php __("MailChimp Integration", "profile-builder"); ?>
-<?php __("Before you can make any changes you will need to add a MailChimp API key.", "profile-builder"); ?>
-<?php __("MailChimp List", "profile-builder"); ?>
-<?php __("We couldn't find any lists", "profile-builder"); ?>
-<?php __("MailChimp API Key:", "profile-builder"); ?>
-<?php __("Either the API key is not valid or we could not connect to MailChimp to validate it!", "profile-builder"); ?>
-<?php __("Enter a MailChimp API key. You can create keys in your MailChimp account.", "profile-builder"); ?>
-<?php __("Edit this item", "profile-builder"); ?>
-<?php __("This field is required in MailChimp", "profile-builder"); ?>
-<?php __("Associate each MailChimp field with a Profile Builder field", "profile-builder"); ?>
-<?php __("Group Associations:", "profile-builder"); ?>
-<?php __("Associate each MailChimp group with a Profile Builder field", "profile-builder"); ?>
-<?php __("Double Opt-In", "profile-builder"); ?>
-<?php __("If you select double opt-in, the user will receive an e-mail to confirm the subscription", "profile-builder"); ?>
-<?php __("Send Welcome E-mail", "profile-builder"); ?>
-<?php __("If checked will send an e-mail to welcome the user to the subscription area", "profile-builder"); ?>
-<?php __("MailChimp API key is empty", "profile-builder"); ?>
-<?php __("MailChimp API key is invalid", "profile-builder"); ?>
-<?php __("Something went wrong. Either the API key is invalid or we could not connect to MailChimp to validate the key.", "profile-builder"); ?>
-<?php __("Please enter a MailChimp API key <a href=\"%s\">here</a>.", "profile-builder"); ?>
-<?php __("Select in which MailChimp list you wish to add a new subscriber", "profile-builder"); ?>
-<?php __("Checked by Default", "profile-builder"); ?>
-<?php __("If checked the Subscribe checkbox in the front-end will be checked by default on register forms", "profile-builder"); ?>
-<?php __("We couldn't find any lists in your MailChimp settings.", "profile-builder"); ?>
-<?php __("Please select at least one MailChimp list \n", "profile-builder"); ?>
-<?php __("Profile Builder MailChimp Widget", "profile-builder"); ?>
-<?php __("Adds a basic subscribe form so that your users can subscribe to your MailChimp lists", "profile-builder"); ?>
-<?php __("Something went wrong. Either the MailChimp API key is missing or it is invalid.", "profile-builder"); ?>
-<?php __("Select...", "profile-builder"); ?>
-<?php __("Extra Options", "profile-builder"); ?>
-<?php __("Please select a list first", "profile-builder"); ?>
-<?php __("No list was found.", "profile-builder"); ?>
-<?php __("MailPoet List", "profile-builder"); ?>
-<?php __("Select in which MailPoet list you wish to add a new subscriber", "profile-builder"); ?>
-<?php __("We couldn't find any lists in your MailPoet settings.", "profile-builder"); ?>
-<?php __("Please install and activate MailPoet plugin.", "profile-builder"); ?>
-<?php __("Please select at least one MailPoet list \n", "profile-builder"); ?>
-<?php __("Maximum Selections", "profile-builder"); ?>
-<?php __("Select2 multi-value select boxes can set restrictions regarding the maximum number of options selected.", "profile-builder"); ?>
-<?php __("User Inputted Options", "profile-builder"); ?>
-<?php __("Check this to allow users to create their own options beside the pre-existing ones.", "profile-builder"); ?>
-<?php __("Link with Facebook", "profile-builder"); ?>
-<?php __("Sign in with Facebook", "profile-builder"); ?>
-<?php __("Link with Google+", "profile-builder"); ?>
-<?php __("Sign in with Google+", "profile-builder"); ?>
-<?php __("Link with LinkedIn", "profile-builder"); ?>
-<?php __("Sign in with LinkedIn", "profile-builder"); ?>
-<?php __("Connection with twitter Failed", "profile-builder"); ?>
-<?php __("Error Receiving Request Token", "profile-builder"); ?>
-<?php __("Link with Twitter", "profile-builder"); ?>
-<?php __("Sign in with Twitter", "profile-builder"); ?>
 <?php __("Add-Ons", "profile-builder"); ?>
 <?php __("Recommended Plugins", "profile-builder"); ?>
 <?php __("Free", "profile-builder"); ?>
@@ -427,10 +35,12 @@
 <?php __("Admin Bar Settings", "profile-builder"); ?>
 <?php __("Choose which user roles view the admin bar in the front-end of the website.", "profile-builder"); ?>
 <?php __("User-Role", "profile-builder"); ?>
+<?php __("Visibility", "profile-builder"); ?>
 <?php __("Default", "profile-builder"); ?>
 <?php __("Show", "profile-builder"); ?>
 <?php __("Hide", "profile-builder"); ?>
 <?php __("Login is set to be done using the E-mail. This field will NOT appear in the front-end! ( you can change these settings under the \"%s\" tab )", "profile-builder"); ?>
+<?php __("General Settings", "profile-builder"); ?>
 <?php __("Display name publicly as - only appears on the Edit Profile page!", "profile-builder"); ?>
 <?php __("Blog Details - only appears on the Registration page!", "profile-builder"); ?>
 <?php __("<strong>ERROR</strong>: The password must have the minimum length of %s characters", "profile-builder"); ?>
@@ -442,6 +52,7 @@
 <?php __("Add Field", "profile-builder"); ?>
 <?php __("Save Settings", "profile-builder"); ?>
 <?php __("If you enjoy using <strong> %1$s </strong> please <a href=\"%2$s\" target=\"_blank\">rate us on WordPress.org</a>. More happy users means more features, less bugs and better support for everyone. ", "profile-builder"); ?>
+<?php __("Settings", "profile-builder"); ?>
 <?php __("View Profile Builder documentation", "profile-builder"); ?>
 <?php __("Docs", "profile-builder"); ?>
 <?php __("Check out the Customization Toolbox add-on which packs the most popular customization requests from Profile Builder.", "profile-builder"); ?>
@@ -539,8 +150,10 @@
 <?php __("Administrator Emails", "profile-builder"); ?>
 <?php __("Profile Builder Settings", "profile-builder"); ?>
 <?php __("Load Profile Builder's own CSS file in the front-end:", "profile-builder"); ?>
+<?php __("Yes", "profile-builder"); ?>
 <?php __("You can find the default file here: %1$s", "profile-builder"); ?>
 <?php __("\"Email Confirmation\" Activated:", "profile-builder"); ?>
+<?php __("No", "profile-builder"); ?>
 <?php __("This works with front-end forms only. Recommended to redirect WP default registration to a Profile Builder one using \"Custom Redirects\" module.", "profile-builder"); ?>
 <?php __("You can find a list of unconfirmed email addresses %1$sUsers > All Users > Email Confirmation%2$s.", "profile-builder"); ?>
 <?php __("\"Email Confirmation\" Landing Page:", "profile-builder"); ?>
@@ -593,6 +206,7 @@
 <?php __("Enter a detailed description of the temrs of agreement for the user to read.<br/>Links can be inserted by using standard HTML syntax: &lt;a href=\"custom_url\"&gt;custom_text&lt;/a&gt;", "profile-builder"); ?>
 <?php __("Options", "profile-builder"); ?>
 <?php __("Enter a comma separated list of values<br/>This can be anything, as it is hidden from the user, but should not contain special characters or apostrophes", "profile-builder"); ?>
+<?php __("Labels", "profile-builder"); ?>
 <?php __("Enter a comma separated list of labels<br/>Visible for the user", "profile-builder"); ?>
 <?php __("reCAPTCHA Type", "profile-builder"); ?>
 <?php __("Choose the <a href=\"https://developers.google.com/recaptcha/docs/versions\" target=\"_blank\">type of reCAPTCHA</a> you wish to add to this site.", "profile-builder"); ?>
@@ -662,18 +276,25 @@
 <?php __("To allow multiple decimals use for eg. 0.01 (for 2 deciamls) and so on", "profile-builder"); ?>
 <?php __("You can also use step value to specify the legal number intervals (eg. step value 2 will allow only -4, -2, 0, 2 and so on)", "profile-builder"); ?>
 <?php __("Leave it empty for no restriction", "profile-builder"); ?>
+<?php __("Required", "profile-builder"); ?>
 <?php __("Whether the field is required or not", "profile-builder"); ?>
 <?php __("Overwrite Existing", "profile-builder"); ?>
 <?php __("Selecting 'Yes' will add the field to the list, but will overwrite any other field in the database that has the same meta-name<br/>Use this at your own risk", "profile-builder"); ?>
 <?php __("Form Field Properties", "profile-builder"); ?>
 <?php __("Registration & Edit Profile Forms", "profile-builder"); ?>
+<?php __("Name", "profile-builder"); ?>
 <?php __("Usernames cannot be changed.", "profile-builder"); ?>
+<?php __("First Name", "profile-builder"); ?>
+<?php __("Last Name", "profile-builder"); ?>
 <?php __("Nickname", "profile-builder"); ?>
 <?php __("Display name publicly as", "profile-builder"); ?>
+<?php __("Contact Info", "profile-builder"); ?>
+<?php __("E-mail", "profile-builder"); ?>
 <?php __("Website", "profile-builder"); ?>
 <?php __("AIM", "profile-builder"); ?>
 <?php __("Yahoo IM", "profile-builder"); ?>
 <?php __("Jabber / Google Talk", "profile-builder"); ?>
+<?php __("About Yourself", "profile-builder"); ?>
 <?php __("Biographical Info", "profile-builder"); ?>
 <?php __("Share a little biographical information to fill out your profile. This may be shown publicly.", "profile-builder"); ?>
 <?php __("Password", "profile-builder"); ?>
@@ -1063,6 +684,8 @@
 <?php __("Please select at least one user role\n", "profile-builder"); ?>
 <?php __("That field is already added in this form\n", "profile-builder"); ?>
 <?php __("<pre>Title</pre><pre>Type</pre><pre>Meta Name</pre><pre class=\"wppb-mb-head-required\">Required</pre>", "profile-builder"); ?>
+<?php __("Edit", "profile-builder"); ?>
+<?php __("Delete", "profile-builder"); ?>
 <?php __("Use these shortcodes on the pages you want the forms to be displayed:", "profile-builder"); ?>
 <?php __("If you're interested in displaying different fields in the registration and edit profile forms, please use the Multiple Registration & Edit Profile Forms Modules.", "profile-builder"); ?>
 <?php __("With Profile Builder Pro you can display different fields in the registration and edit profile forms, using the Multiple Registration & Edit Profile Forms module.", "profile-builder"); ?>
@@ -1123,9 +746,11 @@
 <?php __("This field is required", "profile-builder"); ?>
 <?php __("Please enter a (valid) reCAPTCHA value", "profile-builder"); ?>
 <?php __("Incorrect phone number", "profile-builder"); ?>
+<?php __("Cancel", "profile-builder"); ?>
 <?php __("Content", "profile-builder"); ?>
 <?php __("<br><br>Also, you will be able to visit your site at ", "profile-builder"); ?>
 <?php __("<br><br>You can visit your site at ", "profile-builder"); ?>
+<?php __("here", "profile-builder"); ?>
 <?php __("You will soon be redirected automatically. If you see this page for more than %1$d seconds, please click %2$s.%3$s", "profile-builder"); ?>
 <?php __("No feed available,please visit our <a href=\"%s\">homepage</a>!", "profile-builder"); ?>
 <?php __("You are not currently logged in.", "profile-builder"); ?>
@@ -1136,6 +761,7 @@
 <?php __("Users cannot currently register themselves, but you can manually create users here.", "profile-builder"); ?>
 <?php __("You are currently logged in as %1s. You don't need another account. %2s", "profile-builder"); ?>
 <?php __("Log out of this account.", "profile-builder"); ?>
+<?php __("Logout", "profile-builder"); ?>
 <?php __("You must be logged in to edit your profile.", "profile-builder"); ?>
 <?php __("You are not allowed to do this.", "profile-builder"); ?>
 <?php __("The account %1s has been successfully created!", "profile-builder"); ?>
@@ -1144,6 +770,7 @@
 <?php __("Your profile has been successfully updated!", "profile-builder"); ?>
 <?php __("There was an error in the submitted form", "profile-builder"); ?>
 <?php __("Add User", "profile-builder"); ?>
+<?php __("Register", "profile-builder"); ?>
 <?php __("Send these credentials via email.", "profile-builder"); ?>
 <?php __("User to edit:", "profile-builder"); ?>
 <?php __("Select User", "profile-builder"); ?>
@@ -1202,81 +829,6 @@
 <?php __("Status", "profile-builder"); ?>
 <?php __("Active", "profile-builder"); ?>
 <?php __("Inactive", "profile-builder"); ?>
-<?php __("Passwordless Login URL", "profile-builder"); ?>
-<?php __("$validation_message", "profile-builder"); ?>
-<?php __("Resend activation email", "profile-builder"); ?>
-<?php __("Enable Passwordless Login tag", "profile-builder"); ?>
-<?php __("Adds a new tag to the email customizers: <strong>{{{passwordless_login_url}}}</strong>.", "profile-builder"); ?>
-<?php __("You can include this in certain User emails to give your users the ability to login instantly.", "profile-builder"); ?>
-<?php __("This feature won't work at all if Admin Approval is enabled.", "profile-builder"); ?>
-<?php __("Automatically generate password for users", "profile-builder"); ?>
-<?php __("By checking this option, the password will be automatically generated and emailed to the user.", "profile-builder"); ?>
-<?php __("Datepicker starts on Monday", "profile-builder"); ?>
-<?php __("Will make all Datepickers use Monday as the first day of the week.", "profile-builder"); ?>
-<?php __("Hide Repeater Fields from the back-end profile page", "profile-builder"); ?>
-<?php __("Repeater Fields from Profile Builder do not work on the back-end user profile page, they are just displayed. If you want to remove them completely, you can use this option.", "profile-builder"); ?>
-<?php __("You will still be able to use them from a front-end edit profile form.", "profile-builder"); ?>
-<?php __("Always capitalize `First Name` and `Last Name` default fields", "profile-builder"); ?>
-<?php __("If you have these fields in your forms, they will be always saved with the first letter as uppercase.", "profile-builder"); ?>
-<?php __("eg.: <strong>Jhon Doe</strong> instead of <strong>jhon doe</strong>", "profile-builder"); ?>
-<?php __("Ban certain words from being used in fields", "profile-builder"); ?>
-<?php __("On", "profile-builder"); ?>
-<?php __("Affected fields:", "profile-builder"); ?>
-<?php __("Banned words:", "profile-builder"); ?>
-<?php __("Error message:", "profile-builder"); ?>
-<?php __("Allows you to define some words which users cannot use in their Username, First Name or Last Name when registering.", "profile-builder"); ?>
-<?php __("Allow or deny email domains from registering", "profile-builder"); ?>
-<?php __("Type:", "profile-builder"); ?>
-<?php __("Allow", "profile-builder"); ?>
-<?php __("Deny", "profile-builder"); ?>
-<?php __("Restricted domains:", "profile-builder"); ?>
-<?php __("This option lets you allow registrations only from certain domains or deny registrations from certain domains.", "profile-builder"); ?>
-<?php __("You should add only the domain in the list from above. eg.: gmail.com", "profile-builder"); ?>
-<?php __("Forms that should bypass Email Confirmation", "profile-builder"); ?>
-<?php __("Users registering through any of the selected forms will not need to confirm their email address.", "profile-builder"); ?>
-<?php __("Remember me checked by default", "profile-builder"); ?>
-<?php __("Check the `Remember Me` checkbox on Login forms, by default.", "profile-builder"); ?>
-<?php __("Remove validation from back-end profile page", "profile-builder"); ?>
-<?php __("When saving the back-end user profile, Profile Builder fields will not be validated anymore. eg.: bypass required attribute", "profile-builder"); ?>
-<?php __("Consider `Anyone can Register` WordPress option", "profile-builder"); ?>
-<?php __("setting", "profile-builder"); ?>
-<?php __("By default, Profile Builder ignores this %1$s. If you check this option, our registration form will consider it.", "profile-builder"); ?>
-<?php __("Modify default Redirect Delay timer", "profile-builder"); ?>
-<?php __("This allows you to change the amount of seconds it takes for the <strong>`After Registration`</strong> redirect to happen.", "profile-builder"); ?>
-<?php __("The default is 3 seconds. Leave empty if you do not want to change it.", "profile-builder"); ?>
-<?php __("Save Admin Approval status in usermeta", "profile-builder"); ?>
-<?php __("By default, the Admin Approval status is saved as a custom taxonomy that is attached to the user.", "profile-builder"); ?>
-<?php __("If you check this option, the status will also be saved in the `*_usermeta` table under the <strong>wppb_approval_status</strong> meta name.", "profile-builder"); ?>
-<?php __("Redirect `/author` page if user is not approved", "profile-builder"); ?>
-<?php __("By default, users placed in Admin Approval will not be able to login, but the Author pages will be toolboxessible.", "profile-builder"); ?>
-<?php __("Using this option you can redirect these pages, sending users who try to toolboxess them to your home page.", "profile-builder"); ?>
-<?php __("Save `Last Login` date in usermeta", "profile-builder"); ?>
-<?php __("By checking this option, each time a user logins, the date and time will be saved in the database.", "profile-builder"); ?>
-<?php __("The meta name for the field will be <strong>last_login_date</strong>.", "profile-builder"); ?>
-<?php __("You can <a href=\"https://www.cozmoslabs.com/docs/profile-builder-2/manage-user-fields/#Manage_existing_custom_fields_with_Profile_Builder\" target=\"_blank\">create a field with this meta name</a> in Profile Builder to display it in the Userlisting or Edit Profile forms.", "profile-builder"); ?>
-<?php __("Save `Last Profile Update` date in usermeta", "profile-builder"); ?>
-<?php __("By checking this option, each time a modifies his profile the date and time will be saved in the database.", "profile-builder"); ?>
-<?php __("The meta name for the field will be <strong>last_profile_update_date</strong>.", "profile-builder"); ?>
-<?php __("Enable Compare shortcode", "profile-builder"); ?>
-<?php __("You can read more info about this shortcode by following <a href=\"https://www.cozmoslabs.com/docs/profile-builder-2/developers-knowledge-base/shortcodes/compare-shortcode/\">this url</a>.", "profile-builder"); ?>
-<?php __("Enable Usermeta shortcode", "profile-builder"); ?>
-<?php __("You can read more info about this shortcode by following <a href=\"https://www.cozmoslabs.com/docs/profile-builder-2/developers-knowledge-base/shortcodes/display-user-meta/\">this url</a>.", "profile-builder"); ?>
-<?php __("Enable Resend Activation Email shortcode", "profile-builder"); ?>
-<?php __("You can read more info about this shortcode by following <a href=\"https://www.cozmoslabs.com/docs/profile-builder-2/developers-knowledge-base/shortcodes/resend-confirmation-email/\">this url</a>.", "profile-builder"); ?>
-<?php __("Enable Format Date shortcode", "profile-builder"); ?>
-<?php __("You can read more info about this shortcode by following <a href=\"https://www.cozmoslabs.com/docs/profile-builder-2/developers-knowledge-base/shortcodes/format-date-shortcode/\">this url</a>.", "profile-builder"); ?>
-<?php __("Change placeholder text for Search box", "profile-builder"); ?>
-<?php __("This refers to the placeholder text from the <strong>{{{extra_search_all_fields}}}</strong> tag.", "profile-builder"); ?>
-<?php __("Default text is <strong>Search Users by All Fields</strong>, use this option to change it to something else. Leave empty if you do not want to change it.", "profile-builder"); ?>
-<?php __("Modify base URL for Single Userlisting", "profile-builder"); ?>
-<?php __("By default Single Userlisting URLs contain the word <strong>user</strong>. eg.: ", "profile-builder"); ?>
-<?php __("Using this option, you can change the word <strong>user</strong> to something else. Leave empty if you do not want to change it.", "profile-builder"); ?>
-<?php __("Make the Single Userlisting URLs work with user nicename", "profile-builder"); ?>
-<?php __("By default Single Userlisting URLs are generated using the users ID. eg.: ", "profile-builder"); ?>
-<?php __("With this option activated, the URLs will be generated using the users <strong>nicename</strong>.", "profile-builder"); ?>
-<?php __("Remove repetition counts from Faceted Menus", "profile-builder"); ?>
-<?php __("The number of users that share a particular value is shown for the Select and Checkbox facet types.", "profile-builder"); ?>
-<?php __("If you enable this option they will be hidden.", "profile-builder"); ?>
 <?php __("Your account has to be confirmed by an administrator before you can log in.", "profile-builder"); ?>
 <?php __("Admin Approval", "profile-builder"); ?>
 <?php __("Do you want to", "profile-builder"); ?>
@@ -1294,6 +846,7 @@
 <?php __("Your account on %1$s has been unapproved!", "profile-builder"); ?>
 <?php __("unapproved", "profile-builder"); ?>
 <?php __("An administrator has just unapproved your account on %1$s (%2$s).", "profile-builder"); ?>
+<?php __("<strong>ERROR</strong>: Your account has to be confirmed by an administrator before you can log in.", "profile-builder"); ?>
 <?php __("Your account has to be confirmed by an administrator before you can use the \"Password Recovery\" feature.", "profile-builder"); ?>
 <?php __("Your account has been successfully created!", "profile-builder"); ?>
 <?php __("The approval link is not valid! Please <a href=\"%s\"> log in </a> to approve the user manually. ", "profile-builder"); ?>
@@ -1326,6 +879,7 @@
 <?php __("Type of Restriction", "profile-builder"); ?>
 <?php __("Settings Default", "profile-builder"); ?>
 <?php __("Display For", "profile-builder"); ?>
+<?php __("Logged In Users", "profile-builder"); ?>
 <?php __("Checking only \"Logged In Users\" will show this %s to all logged in users, regardless of user role.", "profile-builder"); ?>
 <?php __("Checking any user role will show this %s only to users that have one of those user roles assigned.", "profile-builder"); ?>
 <?php __("Restriction Redirect URL", "profile-builder"); ?>
@@ -1347,6 +901,7 @@
 <?php __("Message for logged-out users", "profile-builder"); ?>
 <?php __("Message for logged-in users", "profile-builder"); ?>
 <?php __("Restricted Posts Preview", "profile-builder"); ?>
+<?php __("None", "profile-builder"); ?>
 <?php __("Show the first %s words of the post's content", "profile-builder"); ?>
 <?php __("Show the content before the \"more\" tag", "profile-builder"); ?>
 <?php __("Show a portion of the restricted post to logged-out users or users that are not allowed to see it.", "profile-builder"); ?>
@@ -1378,6 +933,7 @@
 <?php __("The \"Admin Approval\" feature was activated at the time of registration, so please remember that you need to approve this user before he/she can log in!", "profile-builder"); ?>
 <?php __("This login widget lets you add a login form in the sidebar.", "profile-builder"); ?>
 <?php __("Profile Builder Login Widget", "profile-builder"); ?>
+<?php __("Login", "profile-builder"); ?>
 <?php __("Title:", "profile-builder"); ?>
 <?php __("After login redirect URL (optional):", "profile-builder"); ?>
 <?php __("Register page URL (optional):", "profile-builder"); ?>
@@ -1487,6 +1043,7 @@
 <?php __("User Email Customizer Settings", "profile-builder"); ?>
 <?php __("These settings are also replicated in the \"Admin Email Customizer\" settings-page upon save.", "profile-builder"); ?>
 <?php __("<h3>Welcome to {{site_name}}!</h3>\n<p>Your username is:{{username}} and password:{{password}}</p>\n", "profile-builder"); ?>
+<?php __("Default Registration", "profile-builder"); ?>
 <?php __("<p>To activate your user, please click the following link:<br/>\n{{{activation_link}}}</p>\n<p>After you activate, you will receive another email with your credentials.</p>\n", "profile-builder"); ?>
 <?php __("[{{site_name}}] Activate {{username}}", "profile-builder"); ?>
 <?php __("Registration with Email Confirmation", "profile-builder"); ?>
@@ -1535,6 +1092,7 @@
 <?php __("You need to specify the title of the form before creating it", "profile-builder"); ?>
 <?php __("<pre>Title (Type)</pre>", "profile-builder"); ?>
 <?php __("Delete all items", "profile-builder"); ?>
+<?php __("Delete all", "profile-builder"); ?>
 <?php __("Add new Registration Form", "profile-builder"); ?>
 <?php __("Edit the Registration Forms", "profile-builder"); ?>
 <?php __("New Registration Form", "profile-builder"); ?>
@@ -1649,14 +1207,15 @@
 <?php __("You need to activate the Userlisting feature from within the \"Modules\" tab!", "profile-builder"); ?>
 <?php __("You can find it in the Profile Builder menu.", "profile-builder"); ?>
 <?php __("No results found!", "profile-builder"); ?>
+<?php __("Save", "profile-builder"); ?>
+<?php __("Edit this item", "profile-builder"); ?>
 <?php __("Delete this item", "profile-builder"); ?>
-<?php __("Syncronize WCK", "profile-builder"); ?>
-<?php __("Syncronize WCK Translation", "profile-builder"); ?>
 <?php __("Yes, I'd like to create a new site", "profile-builder"); ?>
 <?php __("Your site url will look like this:<br>", "profile-builder"); ?>
 <?php __("Site URL slug", "profile-builder"); ?>
 <?php __("Site Title", "profile-builder"); ?>
 <?php __("Privacy: I would like my site to appear in search engines, and in public listings around this network.", "profile-builder"); ?>
+<?php __("The email you entered is not a valid email address.", "profile-builder"); ?>
 <?php __("You must enter a valid email address.", "profile-builder"); ?>
 <?php __("This email is already reserved to be used soon.", "profile-builder"); ?>
 <?php __("Please try a different one!", "profile-builder"); ?>
@@ -1673,6 +1232,7 @@
 <?php __("This username is invalid because it uses illegal characters.", "profile-builder"); ?>
 <?php __("Please enter a valid username.", "profile-builder"); ?>
 <?php __("This username is already reserved to be used soon.", "profile-builder"); ?>
+<?php __("required", "profile-builder"); ?>
 <?php __("You must enter a valid URL.", "profile-builder"); ?>
 <?php __("Please add the Google Maps API key for this field.", "profile-builder"); ?>
 <?php __("Something went wrong. Please try again.", "profile-builder"); ?>

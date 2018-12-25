@@ -33,6 +33,7 @@ function bwg_addons_display() {
   );
   ?>
   <div class="wrap">
+    <h1 class="bwg-head-notice">&nbsp;</h1>
     <div id="settings">
       <div id="settings-content" >
         <h2 id="add_on_title"><?php _e('Photo Gallery Add-ons', BWG()->prefix); ?></h2>

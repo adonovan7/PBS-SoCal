@@ -127,6 +127,13 @@ if(!function_exists('rbs_ajax_create_article')){
 			$postId = $Poster->PC_current_post_id;
 			$posts_id[] = $postId;
 
+
+			$new_array = array();
+			for ($i = 0; $i < count($posts_id); $i++) {
+				if($posts_id[$i]) $new_array[] = $posts_id[$i];
+			}
+			$posts_id = $new_array;
+		
 			update_post_meta($galleryid, 'rbs_gallery_id', json_encode($posts_id, JSON_FORCE_OBJECT ));
 
 			if( isset($Poster->errors) && count($Poster->errors) ){
@@ -165,13 +172,15 @@ if(!function_exists('rbs_ajax_posts_list')){
 		} ; 
 		$galleryid = (int) $_POST['galleryid'];
 		$posts = get_post_meta( $galleryid, 'rbs_gallery_id' , true);
+		
 
-		if(!count($posts)){
-			e_('No post','robo-gallery');
+		$posts = json_decode($posts, true);
+
+		if( !is_array($posts) ){
+			echo '<p> -- '.__('No post','robo-gallery').'-- </p>';
 			die();
 		}
 
-		$posts = json_decode($posts, true);
 		echo '<table class="widefat importers striped">';
 		echo '<thead>
 				<tr>

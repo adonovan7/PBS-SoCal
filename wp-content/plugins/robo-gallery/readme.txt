@@ -1,10 +1,10 @@
-=== Gallery by Robo - Responsive Image Photo Gallery ===
+=== Image Gallery by Robo – Responsive Photo Gallery ===
 Contributors: gallerysupport, robosoft
 Donate link: https://robosoft.co/robogallery
 Tags: gallery, photo gallery, image gallery, wordpress gallery plugin, responsive gallery
 Requires at least: 3.3
 Tested up to: 4.9
-Stable tag: 2.8.11
+Stable tag: 2.8.13
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,7 +18,19 @@ Gallery on your website it's really attractive and very important part of your p
 
 [youtube https://www.youtube.com/watch?v=m9XIeqMnhYI&feature=youtu.be]
 
-> #### Demos 
+> #### Demos
+>
+>[Portfolio Gallery](https://robosoft.co/demo/gallery/portfolio-gallery/)
+>
+>[Hash Tags](https://robosoft.co/demo/gallery/hashtags/)
+>
+>[Masonry Gallery](https://robosoft.co/demo/gallery/masonry-gallery/)
+>
+>[Youtube Video](https://robosoft.co/demo/gallery/youtube-video-gallery/)
+>
+>[Blog Style](https://robosoft.co/demo/gallery/blog-style-gallery/)
+>
+>[Vimeo Video](https://robosoft.co/demo/gallery/vimeo-video-gallery/)
 >
 >[Multi Categories Cars Demo](https://robosoft.co/demo/gallery/cars-gallery-demo/)
 >
@@ -189,6 +201,17 @@ Plugin implemented in native Wordpress style. All code implemented based on Word
 If any problem occurs, please contact us.
 
 == Changelog ==
+
+= 2.8.13 =
+*  Fixed notices nad optimization of the admin interface
+
+= 2.8.12 =
+*  Added new template tag for video link
+*  Modification of the general CSS styles structure
+*  Added new custom css field where you can add modifications for every item
+*  Added new global custom css for entire plugin
+*  Added new global custom js for entire plugin
+*  Smart parser for the front end includes
 
 = 2.8.11 =
 *  Added check of the no images and notification
@@ -446,6 +469,17 @@ If any problem occurs, please contact us.
 
 
 == Upgrade Notice ==
+
+= 2.8.13 =
+Fixed notices nad optimization of the admin interface
+
+= 2.8.12 =
+Added new template tag for video link
+Modification of the general CSS styles structure
+Added new custom css field where you can add modifications for every item
+Added new global custom css for entire plugin
+Added new global custom js for entire plugin
+Smart parser for the front end includes
 
 = 2.8.11 =
 Added check of the no images and notification

@@ -113,6 +113,7 @@
 		"block5":jQuery('#rsg_button_metabox'),
 		"block6":jQuery('#rsg_loading_metabox'),
 		"block7":jQuery('#rsg_polaroid_metabox'),
+		"block8":jQuery('#rsg_css_metabox'),
 	},
 	rbsAllBlockClass = function (type){
 		jQuery.each( rbsBlockId, function(index, el) {

@@ -3,7 +3,7 @@
 Plugin Name: Robo Gallery
 Plugin URI: https://robosoft.co/wordpress-gallery-plugin
 Description: Gallery modes photo gallery, images gallery, video gallery, Polaroid gallery, gallery lighbox, portfolio gallery, responsive gallery
-Version: 2.8.11
+Version: 2.8.13
 Author: RoboSoft
 Author URI: https://robosoft.co/wordpress-gallery-plugin
 License: GPLv3 or later
@@ -15,7 +15,7 @@ if(!defined('WPINC'))die;
 if(!defined("ABSPATH"))exit;
 
 define("ROBO_GALLERY", 1); 
-define("ROBO_GALLERY_VERSION", '2.8.11'); 
+define("ROBO_GALLERY_VERSION", '2.8.13'); 
 
 define("ROBO_GALLERY_OPTIONS", 'rbs_opt_'); 
 

@@ -43,52 +43,53 @@ class  RoboGalleryLoader extends roboGalleryAbstractExtension{
 	
 
 	public function getCSS(){
-		return 
-'.'.$this->cssPrefix.'Spinner{
-	margin: 50px auto;
-	width: 50px;
-	height: 40px;
-	text-align: center;
-	font-size: 10px;
-}
-.'.$this->cssPrefix.'Spinner > div{
-  background-color: #333;
-  height: 100%;
-  width: 6px;
-  display: inline-block;
-
-  -webkit-animation: '.$this->cssPrefix.'-stretchdelay 1.2s infinite ease-in-out;
-  animation: '.$this->cssPrefix.'-stretchdelay 1.2s infinite ease-in-out;
-}
-.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect2 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect3 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect4 {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect5 {
-  -webkit-animation-delay: -0.8s;
-  animation-delay: -0.8s;
-}
-@-webkit-keyframes '.$this->cssPrefix.'-stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
-  20% { -webkit-transform: scaleY(1.0) }
-}
-@keyframes '.$this->cssPrefix.'-stretchdelay {
-  0%, 40%, 100% { 
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4);
-  }  20% { 
-    transform: scaleY(1.0);
-    -webkit-transform: scaleY(1.0);
-  }
-}';
+		$css = 		
+			'.'.$this->cssPrefix.'Spinner{
+				margin: 50px auto;
+				width: 50px;
+				height: 40px;
+				text-align: center;
+				font-size: 10px;
+			}
+			.'.$this->cssPrefix.'Spinner > div{
+			  background-color: #333;
+			  height: 100%;
+			  width: 6px;
+			  display: inline-block;
+			  -webkit-animation: '.$this->cssPrefix.'-stretchdelay 1.2s infinite ease-in-out;
+			  animation: '.$this->cssPrefix.'-stretchdelay 1.2s infinite ease-in-out;
+			}
+			.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect2 {
+			  -webkit-animation-delay: -1.1s;
+			  animation-delay: -1.1s;
+			}
+			.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect3 {
+			  -webkit-animation-delay: -1.0s;
+			  animation-delay: -1.0s;
+			}
+			.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect4 {
+			  -webkit-animation-delay: -0.9s;
+			  animation-delay: -0.9s;
+			}
+			.'.$this->cssPrefix.'Spinner .'.$this->cssPrefix.'Rect5 {
+			  -webkit-animation-delay: -0.8s;
+			  animation-delay: -0.8s;
+			}
+			@-webkit-keyframes '.$this->cssPrefix.'-stretchdelay {
+			  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+			  20% { -webkit-transform: scaleY(1.0) }
+			}
+			@keyframes '.$this->cssPrefix.'-stretchdelay {
+			  0%, 40%, 100% { 
+			    transform: scaleY(0.4);
+			    -webkit-transform: scaleY(0.4);
+			  }  20% { 
+			    transform: scaleY(1.0);
+			    -webkit-transform: scaleY(1.0);
+			  }
+			}
+		';
+		return $css;
 	}
 
 }

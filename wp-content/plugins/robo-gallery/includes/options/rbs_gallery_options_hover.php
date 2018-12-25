@@ -204,7 +204,7 @@ $hover_group->add_field( array(
 
 $hover_group->add_field( array(
 	'name'    => __('Description Template', 'robo-gallery' ),
-	'desc'    => '@TITLE@ <br/> @CAPTION@ <br/> @DESC@ <br/> @LINK@ ',
+	'desc'    => '@TITLE@ <br/> @CAPTION@ <br/> @DESC@ <br/> @LINK@ <br/> @VIDEOLINK@ ',
 	'default' => 
 		'<div class="rbs-hover-title">@TITLE@</div>'."\n".
 		'<div class="rbs-hover-caption">@CAPTION@</div>'."\n".

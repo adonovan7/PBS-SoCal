@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02
+class ComposerStaticInit30be2a33c4da94a99ba8a12a83eddc9b
 {
     public static $files = array (
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
@@ -2057,6 +2057,7 @@ class ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02
         'Psr\\Log\\NullLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/NullLogger.php',
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
+        'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
         'Symfony\\Component\\EventDispatcher\\ContainerAwareEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/ContainerAwareEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php',
@@ -2490,11 +2491,11 @@ class ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit01ef56d5fd24bc4adbb59e54f6df9a02::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit30be2a33c4da94a99ba8a12a83eddc9b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit30be2a33c4da94a99ba8a12a83eddc9b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit30be2a33c4da94a99ba8a12a83eddc9b::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit30be2a33c4da94a99ba8a12a83eddc9b::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit30be2a33c4da94a99ba8a12a83eddc9b::$classMap;
 
         }, null, ClassLoader::class);
     }

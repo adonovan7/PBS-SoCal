@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 
 require_once ROBO_GALLERY_FRONTEND_EXT_PATH.'core/roboGalleryCore.php';
-require_once ROBO_GALLERY_FRONTEND_EXT_PATH.'loader/RoboGalleryLoader.php';
+
 
 class roboGallery extends roboGalleryUtils{
 
@@ -139,18 +139,46 @@ class roboGallery extends roboGalleryUtils{
 
  		$this->debug = get_option( ROBO_GALLERY_PREFIX.'debugEnable', 0 );
  	}
- 	
+
+ 	function customCSS(){ 	return $this->customAssets('css'); 	}
+ 	function customJS(){ 	return $this->customAssets('js'); 	}
+
+ 	function customAssets( $type = 'css' ) {
+
+ 		$customFiles = get_option( ROBO_GALLERY_PREFIX.$type.'Files', '' );
+ 		if( $customFiles ){
+ 			if( strpos( $customFiles, ';')!==false ){
+ 				$customFiles = explode(';', $customFiles);
+ 			} else if(  strpos( $customFiles, "\n")!==false  ){
+ 				$customFiles = explode( "\n", $customFiles);
+ 			} else $customFiles = array( $customFiles );
+ 		}
+ 		if( !is_array($customFiles) || !count($customFiles)) $customFiles = array();
+ 		for ($i = 0; $i < count($customFiles); $i++){
+ 			$customFiles[$i] = 	site_url( trim( str_replace('\\', '/', $customFiles[$i]) ) );
+ 			//echo $customFiles[$i].'<br />';
+ 		}
+ 		return $customFiles;
+ 	}
+
  	function robo_gallery_styles() {
+
+ 		$customCssFiles = $this->customCSS();
+
  		if( get_option( ROBO_GALLERY_PREFIX.'jqueryVersion', 'build' )=='forced' ){
  			$this->styleList[] = ROBO_GALLERY_URL.'css/gallery.css';
  			if(get_option( ROBO_GALLERY_PREFIX.'fontLoad', 'on' )=='on'){
  				$this->styleList[] = ROBO_GALLERY_URL.'css/gallery.font.css';
  			}
+ 			$this->styleList[] = $this->styleList + $customCssFiles;	
  		} else {
 			wp_enqueue_style( 'robo-gallery-css', 	ROBO_GALLERY_URL.'css/gallery.css', 	array(), ROBO_GALLERY_VERSION, 'all' );
 			if(get_option( ROBO_GALLERY_PREFIX.'fontLoad', 'on' )=='on'){
 				wp_enqueue_style( 'robo-gallery-font', 		ROBO_GALLERY_URL.'css/gallery.font.css', 	array(), ROBO_GALLERY_VERSION, 'all' );
 			}
+			for ($i = 0; $i < count($customCssFiles); $i++) {
+ 				wp_enqueue_style( 'robo-gallery-css-custom-file-'.$i, $customCssFiles[$i], array(), ROBO_GALLERY_VERSION, 'all' );
+ 			}
 		}
 	}
 
@@ -164,6 +192,16 @@ class roboGallery extends roboGalleryUtils{
 		} else {
 			wp_enqueue_script('robo-gallery', ROBO_GALLERY_URL.'js/robo_gallery_alt.js', array(), ROBO_GALLERY_VERSION);
 		}
+
+		$customJsFiles = $this->customJS();
+		if(get_option( ROBO_GALLERY_PREFIX.'jqueryVersion', 'build' )=='forced') {
+ 			$this->scriptList = $this->scriptList + $customJsFiles; 
+		} else {
+			for ($i = 0; $i < count($customJsFiles); $i++) {
+ 				wp_enqueue_script('robo-gallery-js-custom-file-'.$i, $customJsFiles[$i], array('robo-gallery'), ROBO_GALLERY_VERSION ); 			
+ 			}
+		}
+
 		
 		if(	$this->debug){
 			wp_enqueue_script( 'robo-gallery-debug',  			ROBO_GALLERY_URL.'includes/extensions/debug/js/script.js', 	array( ), 	ROBO_GALLERY_VERSION );
@@ -494,6 +532,8 @@ class roboGallery extends roboGalleryUtils{
 		$pretext = get_post_meta( $this->id, ROBO_GALLERY_PREFIX.'pretext', true );
 		$aftertext = get_post_meta( $this->id, ROBO_GALLERY_PREFIX.'aftertext', true );
 
+		$customCss = get_post_meta( $this->id,  ROBO_GALLERY_PREFIX.'cssStyle', true );
+
 		if(count($this->selectImages->imgArray)){
 
 			
@@ -605,10 +645,10 @@ class roboGallery extends roboGalleryUtils{
 		}
 		if( $this->returnHtml ){
 			$this->returnHtml = 
-				'<style type="text/css" scoped>'.$this->roboGalleryCore->getCSS().'</style>'
+				'<style type="text/css" scoped>'.$this->roboGalleryCore->getCSS().$customCss.'</style>'
 				.$this->runEvent('html', 'before')		
 				.$this->roboGalleryCore->getHTML()
-				.'<div id="robo_gallery_main_block_'.$this->galleryId.'" style="'.$this->rbsMainDivStyle.'  display: none;">'
+				.'<div id="robo_gallery_main_block_'.$this->galleryId.'" class="robogallery-gallery-'.($this->real_id ? $this->real_id : $this->id).'" style="'.$this->rbsMainDivStyle.'  display: none;">'
 					.($pretext?'<div>'.$pretext.'</div>':'')
 					.($menu?$this->getMenu():'').
 					'<div id="'.$this->galleryId.'" data-options="'.$this->galleryId.'" style="width:100%;" class="robo_gallery">'
@@ -667,7 +707,7 @@ class roboGallery extends roboGalleryUtils{
 
  		//return $this->roboGalleryCore->runEvent( $element, $event, $this );
 
- 		/*add_filter( 'robo_gallery_frontend_', 'wpcandy_time_ago' );
+ 		/*add_filter( 'robo_gallery_frontend_', 'prefix_time_ago' );
 
  		do_action( 'robo_gallery_frontend_'.$element.'_'.$event );
 */
@@ -682,12 +722,12 @@ class roboGallery extends roboGalleryUtils{
 		print_r($eventResult);
 
 		return $eventResult;*/
- 		/*add_action('wporg_after_settings_page_html',  array($this, 'doEvent'));
- 		add_action('wporg_after_settings_page_html', 'myprefix_add_settings');*/
+ 		/*add_action('prefix_after_settings_page_html',  array($this, 'doEvent'));
+ 		add_action('prefix_after_settings_page_html', 'myprefix_add_settings');*/
  	}
 
  /*	function doEvent( 'element', 'event', 'order' ){
- 		add_action('wporg_after_settings_page_html',  array($this, 'doEvent'));
+ 		add_action('prefix_after_settings_page_html',  array($this, 'doEvent'));
  	}*/
 
  	function getHover( $img ){

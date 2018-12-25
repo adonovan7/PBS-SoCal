@@ -303,7 +303,7 @@ function wppb_get_meta_name( $option = 'wppb_manage_fields', $prefix = 'custom_f
             }
             if( !empty( $meta_numbers ) ){
                 rsort( $meta_numbers );
-                $id = $meta_numbers[0]++;
+                $id = $meta_numbers[0] + 1;
             }
         }
 

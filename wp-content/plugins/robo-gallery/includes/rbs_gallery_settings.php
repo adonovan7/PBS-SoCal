@@ -51,6 +51,9 @@ class Robo_Gallery_Settings {
 		register_setting( 'robo_gallery_settings_post', ROBO_GALLERY_PREFIX.'cloneBlock' );
 		
 		register_setting( 'robo_gallery_settings_seo', ROBO_GALLERY_PREFIX.'seo' );
+
+		register_setting( 'robo_gallery_settings_assets', ROBO_GALLERY_PREFIX.'cssFiles' );
+		register_setting( 'robo_gallery_settings_assets', ROBO_GALLERY_PREFIX.'jsFiles' );
 		
 	}
 
@@ -59,6 +62,9 @@ class Robo_Gallery_Settings {
 		<h2 class="nav-tab-wrapper">
 			<a href="edit.php?post_type=robo_gallery_table&page=robo-gallery-settings&tab=cache" class="nav-tab '.( $this->active_tab == 'cache' ? 'nav-tab-active' : '' ).'">
 		    	'.__('Cache Settings', 'robo-gallery').'
+		    </a>
+		    <a href="edit.php?post_type=robo_gallery_table&page=robo-gallery-settings&tab=assets" class="nav-tab '.( $this->active_tab == 'assets' ? 'nav-tab-active' : '' ).'">
+		    	'.__('Custom JS\CSS', 'robo-gallery').'
 		    </a>
 		    <a href="edit.php?post_type=robo_gallery_table&page=robo-gallery-settings&tab=comp" class="nav-tab '.( $this->active_tab == 'comp' ? 'nav-tab-active' : '' ).'">
 		    	'.__('Compatibility Settings', 'robo-gallery').'
@@ -108,6 +114,12 @@ class Robo_Gallery_Settings {
 					do_settings_sections( 'robo_gallery_settings_comp' ); 
 			        $this->compOptions();
 
+			    } elseif( $this->active_tab == 'assets' ) {
+
+			    	settings_fields( 'robo_gallery_settings_assets' ); 
+					do_settings_sections( 'robo_gallery_settings_assets' ); 
+			        $this->assetsOptions();
+
 			    } elseif( $this->active_tab == 'post' ) {
 
 			    	settings_fields( 'robo_gallery_settings_post' ); 
@@ -153,6 +165,56 @@ class Robo_Gallery_Settings {
 			</tr>
 		<?php
 	}
+
+	function assetsOptions(){
+
+		$cssFiles = trim(get_option( ROBO_GALLERY_PREFIX.'cssFiles', ''));
+		$jsFiles = trim(get_option( ROBO_GALLERY_PREFIX.'jsFiles', ''));
+		 ?>
+			<tr>
+				<th scope="row"><?php _e('Css Files', 'robo-gallery'); ?></th>
+				<td>
+					<p>
+						<label>
+							<?php _e('Just add custom CSS code to this field to apply this styles to entire gallery.','robo-gallery');?>		
+						</label>
+					</p>
+					<textarea 
+						name="<?php echo ROBO_GALLERY_PREFIX.'cssFiles'; ?>" 
+						id="<?php echo ROBO_GALLERY_PREFIX.'cssFiles'; ?>" 
+						class="large-text code" 
+						cols="50" 
+						rows="5"><?php echo $cssFiles; ?></textarea>
+					<p class="description">
+						<?php _e('Path for included files from the WordPress Root Directory','robo-gallery');?><br/>
+						<?php _e('Sample path:','robo-gallery');?> <code>wp-content/plugins/robogallery/css/custom.css</code>							
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><?php _e('JS Files', 'robo-gallery'); ?></th>
+				<td>
+					<p>
+						<label>
+							<?php _e('Just add custom JS code to this field to apply this styles to entire gallery.','robo-gallery');?>
+						</label>
+					</p>
+					<textarea 
+						name="<?php echo ROBO_GALLERY_PREFIX.'jsFiles'; ?>" 
+						id="<?php echo ROBO_GALLERY_PREFIX.'jsFiles'; ?>"  
+						class="large-text code" 
+						cols="50" 
+						rows="5"><?php echo $jsFiles; ?></textarea>
+					<p class="description">
+						<?php _e('Path for included files from the WordPress Root Directory','robo-gallery');?><br/>
+						<?php _e('Sample path:','robo-gallery');?> <code>wp-content/plugins/robogallery/js/custom.js</code>							
+					</p>
+				</td>
+			</tr>
+			
+		<?php
+	}
+
 
 	function compOptions(){
 		 ?>

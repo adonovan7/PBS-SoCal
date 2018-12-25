@@ -3,7 +3,7 @@
  * Plugin Name: Photo Gallery
  * Plugin URI: https://10web.io/plugins/wordpress-photo-gallery/
  * Description: This plugin is a fully responsive gallery plugin with advanced functionality.  It allows having different image galleries for your posts and pages. You can create unlimited number of galleries, combine them into albums, and provide descriptions and tags.
- * Version: 1.5.8
+ * Version: 1.5.10
  * Author: Photo Gallery Team
  * Author URI: https://10web.io/pricing/
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -81,8 +81,8 @@ final class BWG {
     $this->plugin_dir = WP_PLUGIN_DIR . "/" . plugin_basename(dirname(__FILE__));
     $this->plugin_url = plugins_url(plugin_basename(dirname(__FILE__)));
     $this->main_file = plugin_basename(__FILE__);
-    $this->plugin_version = '1.5.8';
-    $this->db_version = '1.5.8';
+    $this->plugin_version = '1.5.10';
+    $this->db_version = '1.5.10';
     $this->prefix = 'bwg';
     $this->nicename = __('Photo Gallery', $this->prefix);
 
@@ -1859,7 +1859,7 @@ function photo_gallery( $id ) {
  */
 function wdpg_tenweb_install_notice() {
   // Show notice only on plugin pages.
-  if ( !isset($_GET['page']) || strpos(esc_html($_GET['page']), '_bwg') === FALSE ) {
+  if ( ( !isset($_GET['page']) || strpos(esc_html($_GET['page']), '_bwg') === FALSE ) || ( isset($_GET['task']) && !strpos(esc_html($_GET['task']), 'edit') === TRUE ) ) {
     return '';
   }
   wp_enqueue_script('thickbox');
@@ -1884,8 +1884,8 @@ function wdpg_tenweb_install_notice() {
     $tenweb_url = admin_url( 'admin.php?page=tenweb_menu' );
     $verify_url = add_query_arg( array ('action' => 'tenweb_status'), admin_url('admin-ajax.php'));
     ?>
-    <div class="notice" id="wd_tenweb_notice_cont">
-      <div class="tenweb_logo notice_col"><img style="display: none"; id="wd_tenweb_logo_notice" src="<?php echo $url . '/images/tenweb/10web-logo.svg'; ?>" /></div>
+    <div class="notice" id="wd_tenweb_notice_cont" style="display: none;">
+      <div class="tenweb_logo notice_col"><img id="wd_tenweb_logo_notice" src="<?php echo $url . '/images/tenweb/10web-logo.svg'; ?>" /></div>
       <div class="tenweb_description notice_col">
         <div>
           <h1><?php _e("Hey There...", $prefix); ?></h1>
@@ -1924,7 +1924,7 @@ function wdpg_tenweb_install_notice() {
 
         </div>
       </div>
-      <button type="button" class="wd_tenweb_notice_dissmiss notice-dismiss" onclick="jQuery('#wd_tenweb_notice_cont').hide(); jQuery.post('<?php echo $dismiss_url; ?>');"><span class="screen-reader-text"></span></button>
+      <button type="button" class="wd_tenweb_notice_dissmiss notice-dismiss" onclick="jQuery('#wd_tenweb_notice_cont').attr('style', 'display: none !important;'); jQuery.post('<?php echo $dismiss_url; ?>');"><span class="screen-reader-text"></span></button>
       <div id="verifyUrl" data-url="<?php echo $verify_url ?>"></div>
 
     </div>
@@ -1979,7 +1979,7 @@ function wdpg_tenweb_install_notice() {
           url: activate_url,
         }).done(function() {
           jQuery("#loading").removeClass('is-active');
-
+          var data_tenweb_url = '';
           jQuery.ajax({ // Check if plugin installed
             type: 'POST',
             url: jQuery("#verifyUrl").attr('data-url'),
@@ -1993,17 +1993,17 @@ function wdpg_tenweb_install_notice() {
               var plStatus = JSON.parse(response);
               if(plStatus.status_active == 1) {
                 jQuery('#install_now').addClass('hide');
-
-                var data_tenweb_url = jQuery('#activate_now').attr('data-tenweb-url');
-
-                jQuery('#activate_now').attr('href',data_tenweb_url);
-                jQuery('#activate_now').text("<?php _e('Go to 10WEB Manager', $prefix) ?>");
+                data_tenweb_url = jQuery('#activate_now').attr('data-tenweb-url');
                 jQuery.post('<?php echo $dismiss_url; ?>');
-
               }
               else {
                 jQuery("#loading").removeClass('is-active');
                 jQuery(".error_activate").removeClass('hide');
+              }
+            },
+            complete : function() {
+              if ( data_tenweb_url != '' ) {
+                window.location.href = data_tenweb_url;
               }
             }
           });
@@ -2029,11 +2029,7 @@ function wdpg_tenweb_install_notice() {
         position: relative;
         background-image: url("<?php echo $url?>/images/tenweb/notice_bg.png");
         background-position: center center;
-        display: inline-block;
-      }
-
-      #wd_tenweb_notice_cont p {
-        color: #333B46;
+        display: inline-block!important;
       }
 
       #wd_tenweb_notice_cont .spinner {
@@ -2043,8 +2039,12 @@ function wdpg_tenweb_install_notice() {
         position:absolute;
         width: 15px;
         height: 15px;
-        bottom: 10px;
+        bottom: 7px;
         right: 10px;
+      }
+
+      #wd_tenweb_notice_cont p {
+        color: #333B46;
       }
 
       .tenweb_action div {
@@ -2203,6 +2203,10 @@ function wdpg_tenweb_install_notice() {
         .tenweb_plugins_icons_item {
           margin-bottom: 0px;
         }
+
+        #wd_tenweb_notice_cont .spinner {
+          right: 0px;
+        }
       }
 
       @media only screen and (max-width: 840px) {
@@ -2240,7 +2244,7 @@ function wdpg_tenweb_install_notice() {
 
         .tenweb_action a.tenweb_activaion {
           width: 150px;
-          height: 35px;
+          height: 30px;
           padding: 0;
 
         }
@@ -2273,7 +2277,7 @@ function wdpg_tenweb_install_notice() {
         }
 
         #wd_tenweb_notice_cont .spinner {
-          right: 80px;
+          right: 70px;
         }
 
 

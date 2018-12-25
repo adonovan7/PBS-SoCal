@@ -35,6 +35,7 @@ function rbs_gallery_group_metabox() {
     	rbs_gallery_include( array( 
     			'rbs_gallery_options_shortcode.php',
     			'rbs_gallery_options_tools.php',
+
     		), ROBO_GALLERY_OPTIONS_PATH);
     }
 	rbs_gallery_include( array(
@@ -51,6 +52,8 @@ function rbs_gallery_group_metabox() {
 		'rbs_gallery_options_loading.php',
 		'rbs_gallery_options_polaroid.php',
 		'rbs_gallery_options_lightbox.php',
+		
+    	'rbs_gallery_options_css.php',
 	 ), ROBO_GALLERY_OPTIONS_PATH);
 
 	if( !ROBO_GALLERY_PRO ) rbs_gallery_include('rbs_gallery_options_info.php', ROBO_GALLERY_OPTIONS_PATH); 

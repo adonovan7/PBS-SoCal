@@ -110,12 +110,14 @@ function wppb_replace_username_on_admin_bar( $wp_admin_bar ) {
 		$current_user = wp_get_current_user();
 
 		if ( $current_user->ID != 0 ) {
-			$my_account_main = $wp_admin_bar->get_node('my-account');
-			$new_title1 = str_replace($current_user->display_name, $current_user->user_email, $my_account_main->title);
-			$wp_admin_bar->add_node(array('id' => 'my-account', 'title' => $new_title1));
+            if( $current_user->display_name === $current_user->user_login ) {
+                $my_account_main = $wp_admin_bar->get_node('my-account');
+                $new_title1 = str_replace($current_user->display_name, $current_user->user_email, $my_account_main->title);
+                $wp_admin_bar->add_node(array('id' => 'my-account', 'title' => $new_title1));
 
-			$my_account_sub = $wp_admin_bar->get_node('user-info');
-			$wp_admin_bar->add_node(array('parent' => 'user-actions', 'id' => 'user-info', 'title' => get_avatar($current_user->ID, 64) . "<span class='display-name'>{$current_user->user_email}</span>", 'href' => get_edit_profile_url($current_user->ID), 'meta' => array('tabindex' => -1)));
+                $my_account_sub = $wp_admin_bar->get_node('user-info');
+                $wp_admin_bar->add_node(array('parent' => 'user-actions', 'id' => 'user-info', 'title' => get_avatar($current_user->ID, 64) . "<span class='display-name'>{$current_user->user_email}</span>", 'href' => get_edit_profile_url($current_user->ID), 'meta' => array('tabindex' => -1)));
+            }
 		}
 	}
 	

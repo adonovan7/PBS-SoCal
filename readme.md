@@ -12,6 +12,8 @@
   * Framework - Wordpress with customized PHP plugins
   * Build Status - In Progress
 
+## Installation 
+
 ## Authors
   * Product: Karen
   * Design: Viviana

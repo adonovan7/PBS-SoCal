@@ -103,7 +103,7 @@ class roboGalleryImages{
 			} else {
 				$this->imgArray[$i]['image'] 	= 	wp_get_attachment_url( $img['id'] );
 				$this->imgArray[$i]['thumb'] 	=	(isset($thumb) && count($thumb) ) ? $thumb[0] : '';
-				$this->imgArray[$i]['sizeW']  	=	(isset($thumb[1]) && count($thumb)) ? $thumb[1] : $this->width;
+				$this->imgArray[$i]['sizeW']  	=	(isset($thumb[1]) && count($thumb)) ? $thumb[1] : $this->width; //*($i%2 ? 1.5: 1)
 				$this->imgArray[$i]['sizeH']  	= 	(isset($thumb[2]) && count($thumb)) ? $thumb[2] : $this->height;
 				$this->imgArray[$i]['data'] 	=	get_post($img['id'] );
 				$this->imgArray[$i]['link'] 	=	get_post_meta( $img['id'], ROBO_GALLERY_PREFIX.'gallery_link', true );
@@ -121,6 +121,20 @@ class roboGalleryImages{
 				}
 				
 				$this->imgArray[$i]['col'] 		=	get_post_meta( $img['id'], ROBO_GALLERY_PREFIX.'gallery_col', true );
+
+				/*switch ($i) {
+					case 4:
+							$this->imgArray[$i]['col'] = 4;
+						break;
+					case 7:
+							$this->imgArray[$i]['col'] = 4;
+						break;
+				}*/
+
+
+				//if( !$this->imgArray[$i]['col'] && ( $i % 2 == 0) ) $this->imgArray[$i]['col'] = rand(2,3);
+				
+
 				$this->imgArray[$i]['effect'] 	=	get_post_meta( $img['id'], ROBO_GALLERY_PREFIX.'gallery_effect', true );
 				$this->imgArray[$i]['alt'] 		=	get_post_meta( $img['id'], '_wp_attachment_image_alt', true );
 
